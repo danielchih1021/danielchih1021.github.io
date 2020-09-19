@@ -1,7 +1,7 @@
 window.addEventListener('load', (event)=>{
     const lu = document.querySelector('#lastupdated');
-    lu.textcontent = document.lastModified;
+    lu.textContent = document.lastModified;
 
     const cry = document.querySelector("#copyrightyear");
-    cry.textcontent = new Date().getFullYear();
+    cry.textContent = new Date().getFullYear();
 })
