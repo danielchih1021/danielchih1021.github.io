@@ -1,0 +1,50 @@
+h1, p, h2, h3{
+    font-family: 'Karla', sans-serif;
+}
+
+header, footer{
+    background-color: aqua;
+    text-align: center;
+    color: darkorange;
+    padding:10px;
+}
+
+.highlight, .legal{
+    background-color: aqua;
+}
+
+h2{
+    background-color: aqua;
+    text-align: center;
+    color:darkorange;
+    padding:10px;
+}
+
+p{
+    background-color: azure;
+    text-align: left;
+    padding:10px;
+}
+
+#nike-desc{
+    color:black;
+}
+
+#purp-desc{
+    color: darkmagenta;
+}
+
+#tesl-desc{
+    color:red;
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    grid-gap: 45px;
+}
