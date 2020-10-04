@@ -1,0 +1,16 @@
+header, footer{
+    background-color: lightblue;
+    color: darkmagenta;
+}
+
+body{
+    background-color: lightcoral;
+}
+
+@media only screen and (min-width:50em){
+    .nav{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 100%;
+    }
+}
