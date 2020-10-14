@@ -22,10 +22,7 @@ main {
 main h2 {
     border-bottom: 1px solid black;
 }
-.profile {
-    float:right;
-    box-shadow: 0 0 17px black;
-}
+
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
     color: white;
 }
@@ -44,4 +41,15 @@ footer p.highlight {
     color: yellow;
     font-size:.8em;
     margin-top:0;
+}
+header div{
+    background-color: limegreen;
+    text-align: center;
+    color:black;
+    max-width: 110%;
+    padding: 10px;
+}
+.profile {
+    float:right;
+    box-shadow: 0 0 17px black;
 }
