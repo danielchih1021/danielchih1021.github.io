@@ -46,8 +46,11 @@ header div{
     background-color: limegreen;
     text-align: center;
     color:black;
-    max-width: 110%;
     padding: 10px;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 150%; 
 }
 .profile {
     float:right;
