@@ -1,0 +1,66 @@
+.main{
+    width:375px;
+    position: relative;
+    height:1849.82px;
+}
+
+@media only screen and (min-width: 750px) {
+    .main{
+        width:750px;
+    }
+}
+
+@media only screen and (min-width: 1040px) {
+    .main{
+        width:1040px;
+    }
+}
+
+.mainPic{
+    width:100%;
+    height:100%;
+}
+
+.leftArrow{
+    position: absolute;
+    top:25%;
+    left:5%;
+}
+
+.rightArrow{
+    position: absolute;
+    top:25%;
+    right:30%;
+}
+
+.sub1{
+    position: absolute;
+    top:250%;
+    left: 10%;
+}
+
+.sub2{
+    position: absolute;
+    top:250%;
+    left: 25%;
+}
+
+.sub3{
+    position: absolute;
+    top:250%;
+    left: 40%;
+}
+
+.sub4{
+    position: absolute;
+    top:250%;
+    left: 55%;
+    width: 20%;
+}
+
+.intro{
+    position: absolute;
+    top:150%;
+    font-size: 30px;
+    width:100%;
+}

@@ -29,8 +29,8 @@ nav {
 	font-weight: 700;
 }
 .navigation a:hover {
-	color: white;
-	background-color: black;
+	color: rgb(20, 134, 206);
+	background-color: rgb(194, 187, 187);
 }
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
@@ -97,8 +97,39 @@ footer{
 	font-family: 'Roboto', sans-serif;
 	padding: 10px 0;
 }
-.bodySections{
+
+.forecast{
 	border-style:double;
 	margin:20px;
 	padding:50px;
+}
+
+.article{
+	border-style:double;
+	margin:20px;
+	padding:50px;
+}
+
+.hero{
+	border-style:double;
+	margin:20px;
+	padding:50px;
+}
+
+h2{
+	text-align: center;
+}
+
+.hero{
+	position: relative;
+}
+
+.summary{
+	position: absolute;
+	top: 20px;
+	border: black dashed;
+}
+
+.heroImg{
+	max-width: 100%;
 }
