@@ -151,6 +151,11 @@ h2{
 	margin:10px;
 }
 
+.active a:hover{
+	background-color: lightcoral;
+	color:black;
+}
+
 /* Media Query for medium views */
 @media only screen and (min-width: 32.5em) {
 	.navigation {
