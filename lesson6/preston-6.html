@@ -44,7 +44,12 @@
         </h2>
         <Section class="hero">
             <div>
-                <img class="heroImg" src='images/Idaho Pic.jpg' alt='Preston Pic'>
+                <picture>
+                    <source class="heroImg" srcset="images/Preston Pic-small.jpg" media="(max-width:32.4em)">
+                    <source class="heroImg" srcset="images/Preston Pic-Medium.jpg" media="(min-width:32.5em)">
+                    <source class="heroImg" srcset="images/Preston Pic-Large.jpg" media="(min-width:65em)">
+                    <img class="heroImg" src='images/Idaho Pic.jpg' alt='Preston Pic'>
+                </picture>
             </div>
             <div class="summary">
                 Weather Summary

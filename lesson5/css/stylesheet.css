@@ -102,7 +102,7 @@ h2{
 	padding:2%;
 	border-radius:25px;
 	max-width: 100%;
-	font-size:2vw
+	font-size:2vw;
 }
 
 .heroImg{
@@ -153,7 +153,7 @@ h2{
 .active{
 	background: rgb(9,9,121);
 	background: radial-gradient(circle, rgba(9,9,121,1) 35%, rgba(0,255,252,1) 100%);
-	color:black;
+	color:white;
 }
 
 /* Media Query for medium views */
