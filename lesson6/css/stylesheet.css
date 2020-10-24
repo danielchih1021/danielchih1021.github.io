@@ -102,8 +102,10 @@ h2{
 	padding:2%;
 	border-radius:25px;
 	max-width: 100%;
-	font-size:2vw
+	font-size:2vw;
 }
+
+
 
 .heroImg{
 	max-width: 100%;
@@ -128,6 +130,11 @@ h2{
 	color:white;
 }
 
+
+#temp{
+	color:white;
+	font-size:2vw;
+}
 .forecast-sub{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -154,6 +161,16 @@ h2{
 .active a:hover{
 	background-color: lightcoral;
 	color:black;
+}
+
+#windSpeed{
+	color:white;
+	font-size:2vw;
+}
+
+main{
+	padding-right:50px;
+	padding-left:50px;
 }
 
 /* Media Query for medium views */
@@ -212,3 +229,4 @@ h2{
 		display: none;
 	}
 }
+

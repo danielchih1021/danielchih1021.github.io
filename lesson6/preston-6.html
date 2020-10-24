@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src='js/script.js'></script>
+    <script src='js/windchill.js'></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet"> 
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -44,21 +45,20 @@
         </h2>
         <Section class="hero">
             <div>
-                <picture>
-                    <source class="heroImg" srcset="images/Preston Pic-small.jpg" media="(max-width:32.4em)">
-                    <source class="heroImg" srcset="images/Preston Pic-Medium.jpg" media="(min-width:32.5em)">
-                    <source class="heroImg" srcset="images/Preston Pic-Large.jpg" media="(min-width:65em)">
-                    <img class="heroImg" src='images/Idaho Pic.jpg' alt='Preston Pic'>
-                </picture>
+                <img class= "heroImg" src='images/Idaho Pic.jpg' alt='Preston Pic'
+                    srcset="images/Preston_Pic-small.jpg 500w,
+                            images/Preston_Pic-Medium.jpg 800w,
+                            images/Preston_Pic-Large.jpg 1100w,">
             </div>
             <div class="summary">
                 Weather Summary
                 <ul>
                     <li class="bullets">Currently: Super Sunny</li>
-                    <li class="bullets">Temperature: 60º</li>
+                    <li class="bullets">Temperature: <span id="temp">40</span>º</li>
                     <li class="bullets">Humidity: 15%</li>
                     <li class="bullets">Precipitation: 15%</li>
-                    <li class="bullets">Wind Speed: 20 km/hr</li>
+                    <li class="bullets">Wind Speed: <span id="windSpeed">20</span> km/hr</li>
+                    <li class="bullets" id="windChill"></li>
                 </ul>
             </div>
         </Section>
