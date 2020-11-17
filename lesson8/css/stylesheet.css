@@ -1,0 +1,47 @@
+body{
+    width:50%;
+    box-shadow: 5px 10px #888888;
+}
+
+header{
+    text-align: center;
+}
+
+footer{
+    font-size: 12px;
+    text-align: center;
+}
+
+table{
+    text-align: center;
+}
+
+.thead{
+    background-color: #628ca6;
+    color:white;
+}
+
+header{
+    background-color: #628ca6;
+}
+
+footer{
+    background-color: #628ca6;
+}
+
+.oddrow{
+    background-color: #e7f0ed;
+}
+
+.evenrow{
+    background-color: #e7ffed;
+}
+
+th, td{
+    border: 1px solid grey;
+}
+
+header{
+    font-size: 20px;
+    font-weight: bold;;
+}
