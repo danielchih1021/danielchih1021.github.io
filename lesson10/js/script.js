@@ -30,16 +30,17 @@ window.addEventListener('load',(event)=>{
       */
     
     //Pull info via API from the weather website
-    const apiURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=bf7358fc6ab851b5938eef8f5f7118f1';
+    const apiURL = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=bf7358fc6ab851b5938eef8f5f7118f1';
 
     fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
       console.log(jsObject);
+      document.getElementById('desc').innerHTML = jsObject.weather[0]['description'];
+      document.getElementById('temp').innerHTML = jsObject.main.temp;
+      document.getElementById('humid').innerHTML = jsObject.main.humidity;
+      document.getElementById('windSpeed').innerHTML = jsObject.wind[0];
     });
  
-    document.getElementById('desc').innerHTML = jsObject.weather[0]['description'];
-    document.getElementById('temp').innerHTML = jsObject.main.temp;
-    document.getElementById('humid').innerHTML = jsObject.main.humidity;
-    document.getElementById('windSpeed').innerHTML = jsObject.wind[0];
+  
 });
