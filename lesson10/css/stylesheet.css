@@ -1,0 +1,231 @@
+/* Small/Phone View ***************/
+*{
+	color: #4F4A4A;
+	font-family: 'Cabin', sans-serif;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: lightskyblue;
+	font-family: 'Roboto', sans-serif;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	font-weight: 700;
+}
+.navigation a:hover {
+	color: rgb(20, 134, 206);
+	background-color: rgb(194, 187, 187);
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+
+
+#logo{
+	display:inline;
+}
+.headings{
+	display:flex;
+}
+h1{
+	margin-bottom: 0%;
+}
+span{
+	font-style: italic;
+	font-size:13px;
+}
+.headings{
+	margin-bottom: -120px;
+	max-width: 100%;
+}
+footer{
+	background-color: lightskyblue;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	padding: 10px 0;
+}
+
+.forecast{
+	border: double;
+	margin:20px;
+	padding:20px;
+}
+
+.article{
+	border: double;
+	margin:20px;
+	padding:20px;
+}
+
+.hero{
+	border: double;
+	margin:20px;
+	padding:20px;
+}
+
+h2{
+	text-align: center;
+}
+
+.hero{
+	position: relative;
+}
+
+.summary{
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	color:white;
+	background-color: rgb(23, 38, 128);
+	opacity: 0.6;
+	padding:2%;
+	border-radius:25px;
+	max-width: 100%;
+	font-size:2vw;
+}
+
+
+
+.heroImg{
+	max-width: 100%;
+}
+
+.hidden{
+	display: none;
+}
+
+#announcement{
+	text-align: center;
+	background: rgb(166,176,0);
+	background: linear-gradient(90deg, rgba(166,176,0,1) 0%, rgba(212,23,189,1) 35%, rgba(255,0,61,1) 100%); 
+	border-radius:25px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	color:white;
+}
+
+.bullets{
+	color:white;
+}
+
+
+#temp{
+	color:white;
+	font-size:2vw;
+}
+.forecast-sub{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap:1px;
+}
+
+.forecast-sub-day{
+	border: grey solid;
+}
+
+.forecast{
+	background-color:lightskyblue;
+}
+
+.artImg{
+	width:100%;
+}
+
+.presPic{
+	width:60%;
+	margin:10px;
+}
+
+.active a:hover{
+	background-color: lightcoral;
+	color:black;
+}
+
+#windSpeed{
+	color:white;
+	font-size:2vw;
+}
+
+main{
+	padding-right:50px;
+	padding-left:50px;
+}
+
+/* Media Query for medium views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.artImg {
+		max-width: 25%;
+		float: right;
+		margin: 0 15px;
+		width: 150px;
+		height: 150px;
+	  }
+
+	.info{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.contactInfo-main{
+		margin-right:50%;
+		margin-top:20%;
+	}
+
+	.presPic{
+		margin-left:30%;
+		margin-top:10%;
+	}
+}
+
+/* Media Query for large views */
+@media only screen and (min-width: 65em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
