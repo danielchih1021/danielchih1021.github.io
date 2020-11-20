@@ -27,21 +27,23 @@ footer{
     background-color: #628ca6;
 }
 
-.thead{
-    background-color: #628ca6;
-    color:white;
-}
 
 tr:nth-child(even) {
     background-color: #e7f0ed;
 }
 
-.oddrow{
+.thead{
+    background-color: #628ca6;
+    color:white;
+}
+
+tr:nth-child(odd) {
     background-color: #e7ffed;
 }
 
 th, td{
     border: 1px solid grey;
+
 }
 
 td:hover{
