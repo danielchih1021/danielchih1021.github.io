@@ -133,6 +133,19 @@ h2{
 #temp{
 	color:white;
 	font-size:2vw;
+	font-style: normal;
+}
+
+#desc{
+	color:white;
+	font-size:2vw;
+	font-style: normal;
+}
+
+#humid{
+	color:white;
+	font-size:2vw;
+	font-style: normal;
 }
 .forecast-sub{
 	display: grid;
@@ -165,6 +178,7 @@ h2{
 #windSpeed{
 	color:white;
 	font-size:2vw;
+	font-style: normal;
 }
 
 main{
