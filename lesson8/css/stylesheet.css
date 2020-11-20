@@ -27,20 +27,16 @@ footer{
     background-color: #628ca6;
 }
 
-.oddrow{
-    background-color: #e7ffed;
-}
-
 .thead{
     background-color: #628ca6;
     color:white;
 }
 
-/*.evenrow{
-    background-color: #e7ffed;
-}*/
-
 tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+.oddrow{
     background-color: #e7ffed;
 }
 
