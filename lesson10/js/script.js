@@ -49,6 +49,7 @@ window.addEventListener('load',(event)=>{
       console.log(jsObject);
       const listLength = jsObject.list.length
       console.log(listLength);
+      console.log(jsObject.list[0].dt_txt.substr(2, 8));
       function getNextListCount(listLength){
         const listNumArray = [];
         for(i=0;i<listLength;i++){
