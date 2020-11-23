@@ -186,6 +186,26 @@ main{
 	padding-left:50px;
 }
 
+#wday0{
+	background-color: lightcoral;
+}
+
+#wday1{
+	background-color: lightcoral
+}
+
+#wday2{
+	background-color: lightcoral
+}
+
+#wday3{
+	background-color: lightcoral
+}
+
+#wday4{
+	background-color: lightcoral
+}
+
 /* Media Query for medium views */
 @media only screen and (min-width: 32.5em) {
 	.navigation {
