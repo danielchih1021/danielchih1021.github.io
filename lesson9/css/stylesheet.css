@@ -65,7 +65,7 @@ footer{
 	font-family: 'Roboto', sans-serif;
 }
 
-h2{
+.title{
 	text-align: center;
 }
 
@@ -96,22 +96,47 @@ h2{
 	text-align: center;
 }
 
-.picDiv{
-	width:60%;
-}
-
-.container{
-	width:100%;
-}
-
 .pic{
 	width:200px;
 	height:200px;
-	margin: 0 auto;
+	border-radius: 25px;
+}
+
+@media only screen and (max-width: 650px) {
+
+	.catP{
+		width:300px;
+		text-align: center;
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		margin: 0 auto;
+		border-radius: 25px;
+		margin-bottom: 10px;
+	}
+
+	.catFH{
+		width:300px;
+		text-align: center;
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		margin: 0 auto;
+		border-radius: 25px;
+		margin-bottom: 10px;
+	}
+
+	.catSS{
+		width:300px;
+		text-align: center;
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		margin: 0 auto;
+		border-radius: 25px;
+		margin-bottom: 10px;
+	}
 }
 
 /* Media Query for medium views */
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 650px) and (max-width:899px) {
 	.navigation {
 		display: flex;
 	}
@@ -140,6 +165,49 @@ h2{
 		margin-left:30%;
 		margin-top:10%;
 	}
+
+	.catP{
+		width:650px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		border-radius: 25px;
+		margin:0 auto;
+		padding:10px;
+		margin-bottom: 10px;
+	}
+
+	.catFH{
+		width:650px;
+		display:grid;
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		border-radius: 25px;
+		margin:0 auto;
+		padding:10px;
+		margin-bottom: 10px;
+	}
+	.sub-catFH{
+		grid-column: 2/3;
+		grid-row:1/2
+	}
+
+	.picDivFH{
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	.catSS{
+		width:650px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		border-radius: 25px;
+		margin:0 auto;
+		padding:10px;
+		margin-bottom: 10px;
+	}
 }
 
 /* Media Query for large views */
@@ -160,5 +228,42 @@ h2{
 	.navigation li:first-child {
 		display: none;
 	}
+
+	.container{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-gap:1px;
+	}
+
+	.catP{
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		margin:0 auto;
+		width:400px;
+		border-radius: 25px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.catFH{
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		margin:0 auto;
+		width:400px;
+		border-radius: 25px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.catSS{
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		margin:0 auto;
+		width:400px;
+		border-radius: 25px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
 }
 
