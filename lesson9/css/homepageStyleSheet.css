@@ -1,0 +1,269 @@
+/* Small/Phone View ***************/
+*{
+	color: #4F4A4A;
+	font-family: 'Cabin', sans-serif;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: lightskyblue;
+	font-family: 'Roboto', sans-serif;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	font-weight: 700;
+}
+.navigation a:hover {
+	color: rgb(20, 134, 206);
+	background-color: rgb(194, 187, 187);
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+
+
+#logo{
+	display:inline;
+}
+.headings{
+	display:flex;
+}
+h1{
+	margin-bottom: 0%;
+}
+span{
+	font-style: italic;
+	font-size:13px;
+}
+.headings{
+	margin-bottom: -120px;
+	max-width: 100%;
+}
+footer{
+	background-color: lightskyblue;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.title{
+	text-align: center;
+}
+
+.hidden{
+	display: none;
+}
+
+#announcement{
+	text-align: center;
+	background: rgb(166,176,0);
+	background: linear-gradient(90deg, rgba(166,176,0,1) 0%, rgba(212,23,189,1) 35%, rgba(255,0,61,1) 100%); 
+	border-radius:25px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	color:white;
+}
+
+.presPic{
+	width:60%;
+	margin:10px;
+}
+
+.active{
+	background-color: rgb(194, 187, 187);
+}
+
+.title{
+	text-align: center;
+}
+
+.pic{
+	width:200px;
+	height:200px;
+	border-radius: 25px;
+}
+
+@media only screen and (max-width: 650px) {
+
+	.catP{
+		width:300px;
+		text-align: center;
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		margin: 0 auto;
+		border-radius: 25px;
+		margin-bottom: 10px;
+	}
+
+	.catFH{
+		width:300px;
+		text-align: center;
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		margin: 0 auto;
+		border-radius: 25px;
+		margin-bottom: 10px;
+	}
+
+	.catSS{
+		width:300px;
+		text-align: center;
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		margin: 0 auto;
+		border-radius: 25px;
+		margin-bottom: 10px;
+	}
+}
+
+/* Media Query for medium views */
+@media only screen and (min-width: 650px) and (max-width:899px) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.info{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.contactInfo-main{
+		margin-right:50%;
+		margin-top:20%;
+	}
+
+	.presPic{
+		margin-left:30%;
+		margin-top:10%;
+	}
+
+	.catP{
+		width:650px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		border-radius: 25px;
+		margin:0 auto;
+		padding:10px;
+		margin-bottom: 10px;
+	}
+
+	.catFH{
+		width:650px;
+		display:grid;
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		border-radius: 25px;
+		margin:0 auto;
+		padding:10px;
+		margin-bottom: 10px;
+	}
+	.sub-catFH{
+		grid-column: 2/3;
+		grid-row:1/2
+	}
+
+	.picDivFH{
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	.catSS{
+		width:650px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		border-radius: 25px;
+		margin:0 auto;
+		padding:10px;
+		margin-bottom: 10px;
+	}
+}
+
+/* Media Query for large views */
+@media only screen and (min-width: 900px) {
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.container{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-gap:1px;
+	}
+
+	.catP{
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		margin:0 auto;
+		width:400px;
+		border-radius: 25px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.catFH{
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		margin:0 auto;
+		width:400px;
+		border-radius: 25px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.catSS{
+		border: 2px solid  rgb(194, 187, 187);
+		background-color: lightskyblue;
+		margin:0 auto;
+		width:400px;
+		border-radius: 25px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+}
+
