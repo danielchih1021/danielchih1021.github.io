@@ -163,6 +163,10 @@ h2{
 		display:grid;
 		grid-template-columns: 1fr 1fr;
 	}
+
+	.home{
+		background-color: lightskyblue;
+	}
 }
 
 /* Media Query for large views */

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>The Weather Site</title>
+    <meta charset="utf-8">
+    <meta name='description' content="The Weather Site">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src='js/script.js'></script>
+    <script src='js/fishhaven.js'></script>
+    <script src='js/windchill.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+</head>
+<body>
+    <section id="announcement" class="hidden" style="display:block;">
+        Preston Pancakes in The Park! 9:00 a.m. Saturday at the city park pavillion.
+    </section>
+    <header>
+        <section class="headings">
+            <div id="logo">
+                <img src='images/weatherlogo.png' alt='Weather Logo'>
+            </div>
+            <div class="logoName">
+                <h1>
+                    Big Rain Checker
+                </h1>
+                    <span>"Checking your rain to keep rain checks away"</span>
+            </div>
+        </section>
+            <nav>
+                <ul class="navigation">
+                    <li><a class="ham" href="#">☰ Menu</a></li>
+                    <li><a class="home" href="homepage.html">Home</a></li>
+                    <li><a href="preston-11.html">Preston</a></li>
+                    <li><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a class="active" href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallary.html">Gallery</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h2>
+            <strong>Preston Idaho</strong>
+        </h2>
+        <Section class="hero">
+            <div>
+                <img class= "heroImg" src='images/Idaho Pic.jpg' alt='Preston Pic'
+                    srcset="images/Preston_Pic-small.jpg 500w,
+                            images/Preston_Pic-Medium.jpg 800w,
+                            images/PrestonPic.jpg 1100w,">
+            </div>
+            <div class="summary">
+                Weather Summary
+                <ul>
+                    <li class="bullets">Currently: <span id="desc">Super Sunny</span></li>
+                    <li class="bullets">Temperature: <span id="temp">40</span>º</li>
+                    <li class="bullets">Humidity: <span id="humid">15</span>%</li>
+                    <li class="bullets">Precipitation: 15%</li>
+                    <li class="bullets">Wind Speed: <span id="windSpeed">20</span> km/hr</li>
+                    <li class="bullets" id="windChill"></li>
+                </ul>
+            </div>
+        </Section>
+        <section class="forecast">
+            <h2>
+                Five Day Weather Summary
+            </h2>
+            <section>
+                <container class="forecast-sub">
+                    <div class="forecast-sub-day">
+                        <p id="wday0"></p> 
+                        <img src="" alt="" id="icon0">
+                        <p id="temp0"></p>
+                    </div>
+                    <div class="forecast-sub-day">
+                        <p id="wday1"></p>
+                        <img src="" alt="" id="icon1">
+                        <p id="temp1"></p>
+                    </div>
+                    <div class="forecast-sub-day">
+                        <p id="wday2"></p>
+                        <img src="" alt="" id="icon2">
+                        <p id="temp2"></p>
+                    </div>
+                    <div class="forecast-sub-day">
+                        <p id="wday3"></p>
+                        <img src="" alt="" id="icon3">
+                        <p id="temp3"></p>
+                    </div>
+                    <div class="forecast-sub-day">
+                        <p id="wday4"></p>
+                        <img src="" alt="" id="icon4">
+                        <p id="temp4"></p>
+                    </div>
+                </container>
+            </section>
+        </section>
+        <section class="article">
+            <div>
+                <img class="artImg" src='images/pic.jpg' alt=' Pic'>
+            </div>
+            <h2>
+                Article
+            </h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo exercitationem nemo cum odio tempore ad ea incidunt excepturi dignissimos velit, reprehenderit voluptate ducimus vel, quibusdam fugit! Ratione asperiores quaerat similique.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorem ea deleniti odit recusandae eius nostrum illo, numquam impedit, architecto perferendis ullam sunt! Illum consequatur esse molestiae nobis perferendis! Nemo?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, excepturi. Accusantium officiis, vitae consequuntur consectetur minus at quia, laboriosam odit doloribus tenetur officia repellendus maiores. Modi adipisci culpa explicabo. Animi!
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="info">
+            <img class="presPic" src="images/pres.png" alt="Preston Pic">
+            <section class="contactInfo-main">
+                <p class="contactInfo"> 
+                    Contact Information<br>
+                    danielchih1021@gmail.com<br>
+                    xxx-xxx-xxxx
+                </p>
+                <p class='legal'>&copy; <span id='copyrightyear'></span>|  Daniel Chih | Idaho | <a href='https://www.byui.edu/online'>BYUI Online Learning</a></p>
+                <p class='highlight'>Last Updated: <span id='lastupdated'></span></p>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>

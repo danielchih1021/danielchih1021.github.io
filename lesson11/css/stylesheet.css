@@ -105,14 +105,8 @@ h2{
 	font-size:2vw;
 }
 
-
-
 .heroImg{
 	max-width: 100%;
-}
-
-.hidden{
-	display: none;
 }
 
 #announcement{
@@ -123,6 +117,10 @@ h2{
 	font-family: 'Roboto', sans-serif;
 	font-size: 25px;
 	color:white;
+}
+
+.hidden{
+	display:none;
 }
 
 .bullets{
@@ -247,6 +245,10 @@ main{
 	.presPic{
 		margin-left:30%;
 		margin-top:10%;
+	}
+
+	.home{
+		background-color: lightskyblue;
 	}
 }
 

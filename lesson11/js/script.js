@@ -10,10 +10,10 @@ window.addEventListener('load',(event)=>{
     cry.textContent = new Date().getFullYear();
 
     const a = document.querySelector("#announcement");
-    today = new Date().getDate();
+    const today = new Date().getDate();
     if(today==5){
-      a.classList.toggle("hidden");
-      a.style.display = "block";
+      a.classList.toggle("show");
+      a.display = "block";
     }
 
     hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
