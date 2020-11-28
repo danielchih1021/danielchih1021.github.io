@@ -5,8 +5,74 @@ img{
 
 table{
     text-align: left;
+    border-collapse: collapse;
+    color: grey;
+}
+
+b{
+    color:black;
 }
 
 th{
     width:300px;
+}
+
+.head{
+    background-color: #DBE4EA;
+}
+
+.date{
+    color:grey;
+}
+
+.active{
+    background-color: lightgreen;
+    padding:10px;
+    border-radius: 25px;
+    color:grey;
+}
+
+.active i{
+    color: green;
+}
+
+.waiting{
+    background-color: lightyellow;
+    padding:10px;
+    border-radius: 25px;
+    color:grey;
+}
+
+.waiting i{
+    color: yellow;
+}
+
+.material_icons{
+    color: grey;
+}
+
+td i{
+    color: grey;
+}
+
+td .edit i:hover{
+    color: blue;
+    background-color: #DBE4EA;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+td .delete i:hover {
+    color: red;
+    background-color: #DBE4EA;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: hsl(240, 18%, 97%);
+}
+
+tr:hover{
+    background-color: #E7F2FD;
 }
