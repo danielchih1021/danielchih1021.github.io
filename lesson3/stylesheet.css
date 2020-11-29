@@ -1,6 +1,14 @@
+*{
+    font-family: 'Piazzolla', sans-serif;
+}
+
 nav, footer{
     background-color: lightskyblue;
     color: #4F4A4A;
+}
+
+h1{
+    font-family: 'Sansita', serif;
 }
 
 @media only screen and (min-width:50em){
