@@ -1,0 +1,66 @@
+.all{
+    width: 323px;
+    margin: 0 auto;
+}
+
+.head{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: white;
+    padding:10px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.main{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.firstrow{
+    background-color: #001b36;
+}
+
+
+.footer{
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.footnote{
+    text-align: center;
+    color: grey;
+}
+
+.grey_font{
+    color:grey;
+    font-size: 10px;
+}
+
+.city_abbr{
+    color:white;
+    font-weight: bold;
+    font-size:25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+body{
+    background-color: #cfcfcf;
+}
+
+.rows{
+    background-color: #f1f1f1;
+}
+
+.sub_title{
+    font-size: 10px;
+    color: #001b36
+}
+
+.info{
+    color:grey;
+}
