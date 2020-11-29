@@ -19,7 +19,34 @@ window.addEventListener('load',(event)=>{
 
 window.addEventListener('load', (event)=>{
   const lu = document.querySelector('#lastupdated');
-  lu.textContent = document.lastModified;
+  var gsDayNames = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+  ];
+
+  var gsMonthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ];
+
+  const d = new Date(document.lastModified.substr(0,10));
+  const m = new Date().getMonth();
+  lu.textContent = gsDayNames[d.getDay()] + ", " + document.lastModified.substr(3,2) + " " + gsMonthNames[m] + " " + new Date().getFullYear();
 
   const cry = document.querySelector("#copyrightyear");
   cry.textContent = new Date().getFullYear();

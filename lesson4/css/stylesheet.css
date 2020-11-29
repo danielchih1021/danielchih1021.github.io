@@ -40,40 +40,6 @@ nav {
 	display: block;
 }
 
-/* Media Query for medium+ views */
-@media only screen and (min-width: 32.5em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-}
-
-/* Media Query for medium+ views */
-@media only screen and (min-width: 75em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-}
-
 #logo{
 	display:inline;
 }
@@ -132,4 +98,56 @@ h2{
 
 .heroImg{
 	max-width: 100%;
+}
+
+#lastupdated{
+	font-style: normal;
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 75em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+	header{
+		width: 75em;
+		margin: 0 auto;
+	}
+	main{
+		width: 75em;
+		margin: 0 auto;
+	}
+	footer{
+		width: 75em;
+		margin: 0 auto;
+	}
+
 }
