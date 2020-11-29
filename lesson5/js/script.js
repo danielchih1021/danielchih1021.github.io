@@ -10,7 +10,9 @@ window.addEventListener('load',(event)=>{
     cry.textContent = new Date().getFullYear();
 
     const a = document.querySelector("#announcement");
-    today = new Date().getDate();
+    today = new Date().getDay();
+    console.log(today);
+
     if(today==5){
       a.classList.toggle("hidden");
       a.style.display = "block";
