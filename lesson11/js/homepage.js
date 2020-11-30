@@ -18,7 +18,7 @@ fetch(requestURL)
                 motto.textContent = towns[i].motto;
                 motto.id="prestonMotto";
                 motto.className="prestonInfo"
-                years.textContent = "Years Founded: " + towns[i].yearsFounded;
+                years.textContent = "Years Founded: " + towns[i].yearFounded;
                 years.className="prestonInfo";
                 population.textContent = "Current Population: " + towns[i].currentPopulation;
                 population.classname="prestonInfo";
@@ -34,7 +34,7 @@ fetch(requestURL)
                 motto.textContent = towns[i].motto;
                 motto.id="FHMotto";
                 motto.className="FHInfo"
-                years.textContent = "Years Founded: " + towns[i].yearsFounded;
+                years.textContent = "Years Founded: " + towns[i].yearFounded;
                 years.className="FHInfo";
                 population.textContent = "Current Population: " + towns[i].currentPopulation;
                 population.classname="FHInfo";
@@ -50,7 +50,7 @@ fetch(requestURL)
                 motto.textContent = towns[i].motto;
                 motto.id="SSMotto";
                 motto.className="SSInfo"
-                years.textContent = "Years Founded: " + towns[i].yearsFounded;
+                years.textContent = "Years Founded: " + towns[i].yearFounded;
                 years.className="SSInfo";
                 population.textContent = "Current Population: " + towns[i].currentPopulation;
                 population.classname="SSInfo";

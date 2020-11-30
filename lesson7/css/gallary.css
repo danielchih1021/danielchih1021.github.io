@@ -98,10 +98,6 @@ main{
 	height:250px;
 }
 
-.pic:hover{
-	box-shadow: 0 0 50px #333;
-}
-
 .pictures{
 	display:grid;
 	grid-template-columns: 1fr;
@@ -184,6 +180,10 @@ main{
 	.pictures{
 		display:grid;
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.pic:hover{
+		box-shadow: 0 0 50px #333;
 	}
 }
 
