@@ -24,7 +24,7 @@ fetch(requestURL)
                 population.classname="prestonInfo";
                 avgRF.textContent = "Average Rainfall: " + towns[i].averageRainfall;
                 avgRF.classname="prestonInfo";
-
+                
                 card.appendChild(motto);
                 card.appendChild(years);
                 card.appendChild(population);
