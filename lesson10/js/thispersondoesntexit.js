@@ -12,28 +12,31 @@ fetch(apiURL)
         let ip = document.createElement('p');
         let image = document.createElement('img');
         const ICE = jsObject;
-        name.textContent = "Name: " + apiURL.person.personal.name + " " + apiURL.person.personal.last_name;
-        password.textContent = "Password: " + apiURL.person.online_info.password;
-        email.textContent = "Email: " + apiURL.person.online_info.email;
-        eye.textContent = "Eye color " + apiURL.person.personal.eye_color;
-        address.textContent = "Address: " + apiURL.person.personal.city + " " + apiURL.person.personal.country;
-        if(apiURL.person.marriage == "True"){
+        name.textContent = "Name: " + ICE.person.personal.name + " " + ICE.person.personal.last_name;
+        password.textContent = "Password: " + ICE.person.online_info.password;
+        email.textContent = "Email: " + ICE.person.online_info.email;
+        eye.textContent = "Eye color " + ICE.person.personal.eye_color;
+        address.textContent = "Address: " + ICE.person.personal.city + " " + ICE.person.personal.country;
+        if(ICE.person.marriage == "True"){
             let children = document.createElement('p');
-            children.textContent = "Number of children: " + apiURL.person.marriage.children;
+            children.textContent = "Number of children: " + ICE.person.marriage.children;
         }
-        ip.textContent = "Ip address: " + apiURL.person.online_info.ip_address;
+        ip.textContent = "Ip address: " + ICE.person.online_info.ip_address;
 
         image.setAttribute('src', 'https://thispersondoesnotexist.com/image');
         image.setAttribute('alt', 'Picture');
+        image.classname = "image";
 
         document.querySelector('div').appendChild(name);
         document.querySelector('div').appendChild(password);
         document.querySelector('div').appendChild(email);
         document.querySelector('div').appendChild(eye);
         document.querySelector('div').appendChild(address);
-        if(apiURL.person.marriage == "True"){
+        if(ICE.person.marriage == "True"){
             document.querySelector('div').appendChild(children);
         }
         document.querySelector('div').appendChild(ip);
         document.querySelector('div').appendChild(image);
+        let div = document.querySelector('div');
+        div.className = "div";
     });

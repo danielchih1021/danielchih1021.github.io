@@ -153,6 +153,7 @@ h2{
 
 .forecast-sub-day{
 	border: grey solid;
+	text-align: center;
 }
 
 .forecast{
@@ -185,27 +186,46 @@ main{
 }
 
 #wday0{
-	background-color: lightcoral;
+	background-color: white;
+	margin-top: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 #wday1{
-	background-color: lightcoral
+	background-color: white;
+	margin-top: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 #wday2{
-	background-color: lightcoral
+	background-color: white;
+	margin-top: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 #wday3{
-	background-color: lightcoral
+	background-color: white;
+	margin-top: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 #wday4{
-	background-color: lightcoral
+	background-color: white;
+	margin-top: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 .active{
 	background-color: rgb(194, 187, 187);
+}
+
+.events{
+	display:none;
 }
 
 /* Media Query for medium views */
@@ -266,6 +286,16 @@ main{
 	}
 	.navigation li:first-child {
 		display: none;
+	}
+	.events{
+		display:block;
+		border: double;
+		margin:20px;
+		padding:20px;
+		border: 20px solid lightskyblue;
+	}
+	.events_header{
+		text-align: center;
 	}
 }
 
