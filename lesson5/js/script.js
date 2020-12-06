@@ -13,7 +13,7 @@ window.addEventListener('load',(event)=>{
     today = new Date().getDay();
     console.log(today);
 
-    if(today==6){
+    if(today==5){
       a.classList.toggle("hidden");
       a.style.display = "block";
     }

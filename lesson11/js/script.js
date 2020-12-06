@@ -2,18 +2,14 @@ window.addEventListener('load',(event)=>{
     // add code here to run when page loads
     const hambutton = document.querySelector('.ham');
     const mainnav = document.querySelector('.navigation');
-    
-    const lu = document.querySelector('#lastupdated');
-    lu.textContent = document.lastModified;
-  
-    const cry = document.querySelector("#copyrightyear");
-    cry.textContent = new Date().getFullYear();
 
     const a = document.querySelector("#announcement");
-    const today = new Date().getDate();
+    today = new Date().getDay();
+    console.log(today);
+
     if(today==5){
-      a.classList.toggle("show");
-      a.display = "block";
+      a.classList.toggle("hidden");
+      a.style.display = "block";
     }
 
     hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
@@ -29,4 +25,39 @@ window.addEventListener('load',(event)=>{
       classList property - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
       */
     
+});
+
+window.addEventListener('load', (event)=>{
+  const lu = document.querySelector('#lastupdated');
+  var gsDayNames = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+  ];
+
+  var gsMonthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ];
+
+  const d = new Date(document.lastModified.substr(0,10));
+  const m = new Date().getMonth();
+  lu.textContent = gsDayNames[d.getDay()] + ", " + document.lastModified.substr(3,2) + " " + gsMonthNames[m] + " " + new Date().getFullYear();
+
+  const cry = document.querySelector("#copyrightyear");
+  cry.textContent = new Date().getFullYear();
 });

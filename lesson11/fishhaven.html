@@ -9,9 +9,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <script src='js/script.js'></script>
     <script src='js/fishhaven.js'></script>
-    <script src='js/windchill.js'></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet"> 
+    <script src='js/windchill_FH.js'></script>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 </head>
 <body>
@@ -36,7 +34,7 @@
                     <li><a class="home" href="homepage.html">Home</a></li>
                     <li><a href="preston-11.html">Preston</a></li>
                     <li><a href="sodasprings.html">Soda Springs</a></li>
-                    <li><a class="active" href="#">Fish Haven</a></li>
+                    <li><a class="active" href="fishhaven.html">Fish Haven</a></li>
                     <li><a href="stormcenter.html">Storm Center</a></li>
                     <li><a href="gallary.html">Gallery</a></li>
                 </ul>
@@ -44,14 +42,11 @@
     </header>
     <main>
         <h2>
-            <strong>Preston Idaho</strong>
+            <strong>Fish Haven Idaho</strong>
         </h2>
         <Section class="hero">
             <div>
-                <img class= "heroImg" src='images/Idaho Pic.jpg' alt='Preston Pic'
-                    srcset="images/Preston_Pic-small.jpg 500w,
-                            images/Preston_Pic-Medium.jpg 800w,
-                            images/PrestonPic.jpg 1100w,">
+                <img class= "heroImg" src='images/Fish_Haven.jpg' alt='Fish Haven Pic'>
             </div>
             <div class="summary">
                 Weather Summary
@@ -59,8 +54,7 @@
                     <li class="bullets">Currently: <span id="desc">Super Sunny</span></li>
                     <li class="bullets">Temperature: <span id="temp">40</span>º</li>
                     <li class="bullets">Humidity: <span id="humid">15</span>%</li>
-                    <li class="bullets">Precipitation: 15%</li>
-                    <li class="bullets">Wind Speed: <span id="windSpeed">20</span> km/hr</li>
+                    <li class="bullets">Wind Speed: <span id="windSpeed">20</span> mph</li>
                     <li class="bullets" id="windChill"></li>
                 </ul>
             </div>
@@ -97,6 +91,9 @@
                         <p id="temp4"></p>
                     </div>
                 </container>
+                <p>
+                    Weather Source: openweathermap.org
+                </p>
             </section>
         </section>
         <section class="article">
@@ -106,11 +103,11 @@
             <h2>
                 Article
             </h2>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo exercitationem nemo cum odio tempore ad ea incidunt excepturi dignissimos velit, reprehenderit voluptate ducimus vel, quibusdam fugit! Ratione asperiores quaerat similique.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorem ea deleniti odit recusandae eius nostrum illo, numquam impedit, architecto perferendis ullam sunt! Illum consequatur esse molestiae nobis perferendis! Nemo?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, excepturi. Accusantium officiis, vitae consequuntur consectetur minus at quia, laboriosam odit doloribus tenetur officia repellendus maiores. Modi adipisci culpa explicabo. Animi!
+            Fish Haven, originally named Rush Creek, is an unincorporated community along the shores of Bear Lake in Bear Lake County, Idaho, United States. It is 4 km (2.5 miles) north of the Utah border. The first settlement at Fish Haven was made in 1864. A post office called Fish Haven was established in 1867, and remained in operation until 1962. The community was so named because nearby Bear Lake is a favorite fishing spot. Bear Lake is a natural freshwater lake on the Idaho–Utah border in the Western United States. About 109 square miles (280 km2) in size, it is split about equally between the two states; its Utah portion comprises the second-largest natural freshwater lake in Utah, after Utah Lake. The lake has been called the "Caribbean of the Rockies" for its unique turquoise-blue color, which is due to the refraction of calcium carbonate (limestone) deposits suspended in the lake. Its water properties have led to the evolution of several unique species of fauna that occur only within the lake. Bear Lake is over 250,000 years old.It was formed by fault subsidence that continues today, slowly deepening the lake along the eastern side.
+
+            Originally named "Black Bear Lake" by Donald McKenzie, an explorer for the North West Fur Company who explored the lake in 1819, the name was later shortened to Bear Lake. The lake is a popular destination for tourists and sports enthusiasts, and the surrounding valley has gained a reputation for having high-quality raspberries. (Wipipedia - Fish Haven and Bear Lake)
         </section>
-        <section>
+        <section class="main-events">
             <div class="events">
                 <h2 class="events_header">
                     Upcoming Events
@@ -133,5 +130,17 @@
             </section>
         </section>
     </footer>
+    <script 
+        src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Roboto", "Cabin"
+                ]
+            }
+        });
+      </script>
 </body>
 </html>

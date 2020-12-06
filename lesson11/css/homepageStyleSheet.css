@@ -40,8 +40,6 @@ nav {
 	display: block;
 }
 
-
-
 #logo{
 	display:inline;
 }
@@ -51,10 +49,7 @@ nav {
 h1{
 	margin-bottom: 0%;
 }
-span{
-	font-style: italic;
-	font-size:13px;
-}
+
 .headings{
 	margin-bottom: -120px;
 	max-width: 100%;
@@ -63,6 +58,7 @@ footer{
 	background-color: lightskyblue;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
+	padding: 10px 0;
 }
 
 .title{
@@ -84,7 +80,7 @@ footer{
 }
 
 .presPic{
-	width:60%;
+	width:30%;
 	margin:10px;
 }
 
@@ -154,16 +150,17 @@ footer{
 	.info{
 		display:grid;
 		grid-template-columns: 1fr 1fr;
+		width:500px;
+		margin: 0 auto;
 	}
 
-	.contactInfo-main{
+	/* .contactInfo-main{
 		margin-right:50%;
 		margin-top:20%;
-	}
+	} */
 
 	.presPic{
-		margin-left:30%;
-		margin-top:10%;
+		width: 200px;
 	}
 
 	.catP{
@@ -231,15 +228,16 @@ footer{
 
 	.container{
 		display: grid;
+		grid-gap:10px;
 		grid-template-columns: repeat(3,1fr);
-		grid-gap:1px;
+		margin: 0 auto;
 	}
 
 	.catP{
 		border: 2px solid  rgb(194, 187, 187);
 		background-color: lightskyblue;
 		margin:0 auto;
-		width:400px;
+		width:300px;
 		border-radius: 25px;
 		text-align: center;
 		margin-bottom: 10px;
@@ -249,7 +247,7 @@ footer{
 		border: 2px solid  rgb(194, 187, 187);
 		background-color: lightskyblue;
 		margin:0 auto;
-		width:400px;
+		width:300px;
 		border-radius: 25px;
 		text-align: center;
 		margin-bottom: 10px;
@@ -259,15 +257,33 @@ footer{
 		border: 2px solid  rgb(194, 187, 187);
 		background-color: lightskyblue;
 		margin:0 auto;
-		width:400px;
+		width:300px;
 		border-radius: 25px;
 		text-align: center;
 		margin-bottom: 10px;
 	}
 
+	footer{
+		width:60em;
+		padding:20px;
+		margin: 0 auto;
+	}
+
 	.info{
 		display:grid;
 		grid-template-columns: 1fr 1fr;
+	}
+	.presPic{
+		width:200px;
+		height:150px;
+		margin-left: 55%;
+	}
+	.contactInfo-main{
+		margin-right: 55%;
+	}
+	.sub-main{
+		width:60em;
+		margin:0 auto;
 	}
 }
 

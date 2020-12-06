@@ -9,9 +9,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <script src='js/script.js'></script>
     <script src='js/preston.js'></script>
-    <script src='js/windchill.js'></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet"> 
+    <script src='js/windchill_P.js'></script>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 </head>
 <body>
@@ -57,10 +55,9 @@
                 Weather Summary
                 <ul>
                     <li class="bullets">Currently: <span id="desc">Super Sunny</span></li>
-                    <li class="bullets">Temperature: <span id="temp">40</span>º</li>
-                    <li class="bullets">Humidity: <span id="humid">15</span>%</li>
-                    <li class="bullets">Precipitation: 15%</li>
-                    <li class="bullets">Wind Speed: <span id="windSpeed">20</span> km/hr</li>
+                    <li class="bullets">Temperature: <span id="temp"></span>º</li>
+                    <li class="bullets">Humidity: <span id="humid"></span>%</li>
+                    <li class="bullets">Wind Speed: <span id="windSpeed"></span> mph</li>
                     <li class="bullets" id="windChill"></li>
                 </ul>
             </div>
@@ -97,6 +94,9 @@
                         <p id="temp4"></p>
                     </div>
                 </container>
+                <p>
+                    Weather Source: openweathermap.org
+                </p>
             </section>
         </section>
         <section class="article">
@@ -106,11 +106,9 @@
             <h2>
                 Article
             </h2>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo exercitationem nemo cum odio tempore ad ea incidunt excepturi dignissimos velit, reprehenderit voluptate ducimus vel, quibusdam fugit! Ratione asperiores quaerat similique.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorem ea deleniti odit recusandae eius nostrum illo, numquam impedit, architecto perferendis ullam sunt! Illum consequatur esse molestiae nobis perferendis! Nemo?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, excepturi. Accusantium officiis, vitae consequuntur consectetur minus at quia, laboriosam odit doloribus tenetur officia repellendus maiores. Modi adipisci culpa explicabo. Animi!
+            For several years the city held a "Napoleon Dynamite Festival" in the summer. Many of the featured festival themes related to events occurring during the film. For example: Tetherball Tournament, Tater Tot Eating Contest, Moon Boot Dance, Impersonation, Look-A-Like Contest, Football Throwing Contest and more. In 2004 there was a single day event that drew approximately 300 people. Although this was not a large crowd, it did help raise $1,500 for the Preston School District Education Foundation. In 2005 an estimated 6,000 people attended the event, but that number dropped to an estimated 400 people in 2006. The 2007 and 2008 event was held along with the 'That Famous Preston Night Rodeo' in Preston. There are no plans for reviving the event. 'That Famous Preston Night Rodeo' is usually held in late July, along with the Franklin County parade. The rodeo's name ('That Famous Preston Night Rodeo') comes from it being the first rodeo held during night time. It includes many events such as bull riding, barrel racing, and other popular events. The Franklin county parade includes floats and advertisements of local businesses. The rodeo and parade remain one of the town's most popular local events and traditions. (Wikipedia-Preston,ID) 
         </section>
-        <section>
+        <section class="main-events">
             <div class="events">
                 <h2 class="events_header">
                     Upcoming Events
@@ -133,5 +131,17 @@
             </section>
         </section>
     </footer>
+    <script 
+        src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Roboto", "Cabin"
+                ]
+            }
+        });
+      </script>
 </body>
 </html>
