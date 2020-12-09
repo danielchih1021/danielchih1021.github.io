@@ -1,0 +1,395 @@
+/* Small Phone View */
+*{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+p{
+	font-family: 'Inconsolata', sans-serif;
+}
+
+.logoImg{
+	width:100%;
+	margin-top: 8px;
+}
+
+#logo{
+	width:60px;
+	height:60px;
+}
+
+.topItems{
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+	width: 120px;
+	height:100px;
+	border: 1px solid black;
+	-webkit-box-shadow: inset 0 0 10px #fb48b3;
+	box-shadow:         inset 0 0 10px #fb48b3;
+}
+/* .topItems:hover{
+	box-shadow: rgb(213, 210, 208) 5px 5px 15px, rgb(255, 255, 255) -5px -5px 15px;
+	background-color: #fb48b3;
+}  */
+
+.top-top-items{
+	width: 120px;
+	-webkit-box-shadow: 0 0 10px #75d8f3;
+  	box-shadow: 0 0 10px #75d8f3;
+}
+
+.top-top-top-items{
+	width:100%;
+	border: 1px solid black;
+	-webkit-box-shadow: inset 0 0 10px #fb48b3;
+	box-shadow: inset 0 0 10px #fb48b3;
+}
+
+.top-top-top-top-items{
+	width:100%;
+	border: 1px solid black;
+	-webkit-box-shadow: 0 0 10px #75d8f3;
+  	box-shadow: 0 0 10px #75d8f3;
+}
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	/* background-color: lightskyblue; */
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+	margin-top: 5px;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+/* .navigation a:hover {
+	color: rgb(20, 134, 206);
+	background-color: rgb(194, 187, 187);
+} */
+
+.responsive li {
+	display: block;
+	margin-right:0;
+}
+.responsive{
+	display:grid;
+	grid-template-columns: repeat(4,1fr);
+}
+
+.responsive .n_services{
+	grid-row: 2/3;
+	grid-column:2/3;
+}
+
+.responsive .n_reservation{
+	grid-row: 2/3;
+	grid-column:3/4;
+}
+
+.big_header{
+	text-shadow: 2px 2px 5px #75d8f3;
+	margin-bottom: -10px;
+}
+
+.motto{
+	text-shadow: 2px 2px 5px #fb48b3;
+}
+
+.infoSection{
+	-webkit-box-shadow: inset 0 0 10px #fb48b3;
+	box-shadow: inset 0 0 10px #fb48b3;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.top-infoSection{
+	-webkit-box-shadow: 0 0 10px #75d8f3;
+	box-shadow: 0 0 10px #75d8f3;
+	border: 1px solid black;
+	margin-top: 10px;
+}
+
+.SS{
+	width:20px;
+	height:20px;
+	border: 1px solid black;
+	padding: 2px;
+}
+
+.icon_section{
+	margin-top:-10px;
+}
+
+.arrow{
+	width:40px;
+	height:40px;
+	margin-top: 20px;
+	margin-left:-10px;
+}
+
+.company_info{
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+	width:250px;
+}
+
+.company_info_detail{
+	margin-top:-5px;
+}
+
+
+.reference{
+	font-size:12px;
+}
+
+.legal{
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+	width:250px;
+}
+
+.legal_arrow{
+	margin-top: 10px;
+} 
+
+.bannerPic{
+	width:400px;
+	height:300px;
+	border-radius: 25px;
+	margin:0 auto; 
+	box-shadow: rgb(213, 210, 208) 5px 5px 15px, rgb(255, 255, 255) -5px -5px 15px;
+}
+
+.bannerSec{
+	width:400px;
+	height:300px;
+	margin:0 auto; 
+} 
+
+.title{
+	text-align: center;
+}
+
+.SiteName{
+	text-align: center;
+}
+
+.prompt{
+	margin-top:0;
+	text-align: center;
+	font-size:15px
+}
+
+.temples{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(6,1fr);
+	width:400px;
+	height:350px;
+	grid-gap:5px;
+	margin: 0 auto;
+}
+
+.temple1{
+	grid-row: 1/4;
+	grid-column: 1/2;
+	background-color: blue;
+	border-radius: 10px;
+	padding:3px;
+	background-image: url("../images/temple1.jpg");
+	background-size: cover;
+}
+.temple1:hover{
+	box-shadow: 0 0 10px #75d8f3;
+}
+
+.temple2{
+	grid-row: 1/4;
+	grid-column: 2/3;
+	background-color: red;
+	border-radius: 10px;
+	padding:3px;
+	background-image: url("../images/temple2.jpg");
+	background-size: contain;
+}
+
+.temple3{
+	grid-row: 1/4;
+	grid-column: 3/4;
+	background-color: yellow;
+	border-radius: 10px;
+	padding:3px;
+	background-image: url("../images/temple3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.temple4{
+	grid-row: 4/7;
+	grid-column: 1/2;
+	background-color: green;
+	border-radius: 10px;
+	padding:3px;
+	background-image: url("../images/temple4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.temple5{
+	grid-row: 4/7;
+	grid-column: 2/3;
+	background-color: purple;
+	border-radius: 10px;
+	padding:3px;
+	background-image: url("../images/temple5.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.contact_info .company_info_detail{
+	display:none;
+}
+.legal_container .legal_detail{
+	display:none;
+}
+
+.expand .company_info_detail{
+	display:block;
+}
+
+.open .legal_detail{
+	display:block;
+	margin-top:-5px;
+}
+
+.temple1Name{
+	text-decoration:none;
+	color: white;
+	text-shadow: 2px 2px 5px #75d8f3;
+}
+
+.temple1Name:visited{
+	text-decoration:none;
+	color: white;
+	text-shadow: 2px 2px 5px #fb48b3;
+}
+
+.temple2Name{
+	text-decoration:none;
+	color: white;
+	text-shadow: 2px 2px 5px #75d8f3;
+}
+
+.temple2Name:visited{
+	text-decoration:none;
+	color: white;
+	text-shadow: 2px 2px 5px #fb48b3;
+}
+.temple3Name{
+	text-decoration:none;
+	color: white;
+	text-shadow: 2px 2px 5px #75d8f3;
+}
+
+.temple3Name:visited{
+	text-decoration:none;
+	color: white;
+	text-shadow: 2px 2px 5px #fb48b3;
+}
+.temple4Name{
+	text-decoration:none;
+	color: white;
+	text-shadow: 2px 2px 5px #75d8f3;
+}
+
+.temple4Name:visited{
+	text-decoration:none;
+	color: white;
+	text-shadow: 2px 2px 5px #fb48b3;
+}
+.temple5Name{
+	text-decoration:none;
+	color: darkblue;
+	text-shadow: 2px 2px 5px #75d8f3;
+}
+
+.temple5Name:visited{
+	text-decoration:none;
+	color: darkblue;
+	text-shadow: 2px 2px 5px #fb48b3;
+}
+/* Medium Phone View */
+@media only screen and (min-width: 650px) {
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.topItems{
+		width: 100%;
+		grid-template-columns: 60px 1fr;
+	}
+
+	.navigation{
+		margin-left: -30px;
+	}
+
+	.top-top-items{
+		width:100%;
+	}
+
+	.top-infoSection{
+		width:80%;
+		margin: 0 auto;
+	}
+
+	.container{
+		width:80%;
+		margin:0 auto;
+	}
+	
+	.bannerSec{
+		width:100%;
+	}
+
+	.bannerPic{
+		width:100%;
+	}
+
+	.temples{
+		margin-bottom: 30px;
+		width:80%;
+	}
+}
+/* Large Phone View */
+@media only screen and (min-width: 899px) {
+
+}
