@@ -62,3 +62,13 @@ window.addEventListener('load',(event)=>{
     const temple5Div = document.querySelector('.temple5');
     temple5Div.addEventListener('mouseover', bannerSwitch5,false);
 });
+
+const requestURL = 'temple_data.json';
+
+fetch(requestURL)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function (jsonObject){
+        console.log(jsonObject);
+    });

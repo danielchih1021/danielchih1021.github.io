@@ -1,0 +1,60 @@
+{
+    "temples":[
+        {
+            "name": "Taiwan Taipei Temple",
+            "status": "Phase 3",
+            "address": "256 Ai Kuo East Road, Taipei 10642 Taiwan",
+            "phone_number": "(886)2-2192-4930",
+            "important_milestone": {
+                "Announcement": "31 March 1982",
+                "Groundbreaking": "27 August 1982",
+                "Dedication": "17 November 1984"
+            }
+        },
+        {
+            "name": "Florida Fortlauderdale Temple",
+            "status": "Phase 2",
+            "address": "3901 SW 154th Ave Davie FL 33331 United States",
+            "phone_number": "954-382-8390",
+            "important_milestone": {
+                "Announcement": "3 October 2009",
+                "Groundbreaking": "18 June 2011",
+                "Dedication": "4 May 2014"
+            }
+        },
+        {
+            "name": "Florida Orlando Temple",
+            "status": "Phase 2",
+            "address": "9000 Windy Ridge Rd Windermere FL 34786-8347 United States",
+            "phone_number": "407-876-0022",
+            "important_milestone": {
+                "Announcement": "6 April 1991",
+                "Groundbreaking": "20 June 1992",
+                "Dedication": "9 October 1994"
+            }
+        },
+        {
+            "name": "Japan Tokyo Temple",
+            "status": "Closed During Renovation",
+            "address": "5-8-10 Minami Azabu Minato-ku, Tokyo 106-0047, Japan",
+            "phone_number": "N/A",
+            "important_milestone": {
+                "Announcement": "9 August 1975",
+                "Groundbreaking": "10 April 1978",
+                "Dedication": "27 October 1980"
+            }
+        },
+        {
+            "name": "Ecuador Guayaquil Temple",
+            "status": "Phase 2",
+            "address": "6ta y Av. Rodrigo Chavez Principado de las Lomas Templo de Guayaquil, Urdesa Norte, — Guayaquil, Ecuador",
+            "phone_number": "(593)4-371-8100",
+            "important_milestone": {
+                "Announcement": "31 March 1982",
+                "Groundbreaking": "10 August 1996",
+                "Dedication": "1 August 1999"
+            }
+        }
+    ]
+
+}
