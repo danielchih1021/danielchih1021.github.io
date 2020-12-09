@@ -61,9 +61,18 @@ window.addEventListener('load',(event)=>{
 
     const temple5Div = document.querySelector('.temple5');
     temple5Div.addEventListener('mouseover', bannerSwitch5,false);
+
+    function bannerSwitch6 () {
+        const banner_image = document.querySelector('div.bannerSec img.bannerPic');
+        banner_image.setAttribute('src', 'images/taiwan_taipei_temple.jpg');
+        banner_image.setAttribute('alt', 'Default Banner Img');
+    }
+
+    const temple6Div = document.querySelector('.instructions');
+    temple6Div.addEventListener('mouseover', bannerSwitch6,false);
 });
 
-const requestURL = 'temple_data.json';
+const requestURL = '../js/temple_data.json';
 
 fetch(requestURL)
     .then(function(response) {
@@ -71,4 +80,53 @@ fetch(requestURL)
     })
     .then(function (jsonObject){
         console.log(jsonObject);
+        const temples = jsonObject['temples'];
+        for(let i=0; i<temples.length;i++){
+            let t_name = document.createElement('p');
+            let t_status = document.createElement('p');
+            let t_number = document.createElement('p');
+            let t_info = document.createElement('section');
+            if(temples[i].name.includes('Taiwan')){
+                t_name = 'Name: ' + temples[i].name;
+                t_status = 'Current Status: ' + temples[i].status;
+                t_number = 'Phone Number: ' + temples[i].phone_number;
+                console.log(t_name);
+                t_info.appendChild(t_name);
+                t_info.appendChild(t_status);
+                t_info.appendChild(t_number);
+                t_info.className = "temple_info_section";
+            } /* else if (temples[i].name.includes('Fort')){
+                t_name = 'Name: ' + temples[i].name;
+                t_status = 'Current Status: ' + temples[i].status;
+                t_number = 'Phone Number: ' + temples[i].phone_number;
+                t_info.appendChild(t_name);
+                t_info.appendChild(t_status);
+                t_info.appendChild(t_info);
+                t_info.className = "temple_info_section";
+            } else if(temples[i].name.includes('Orlando')){
+                t_name = 'Name: ' + temples[i].name;
+                t_status = 'Current Status: ' + temples[i].status;
+                t_number = 'Phone Number: ' + temples[i].phone_number;
+                t_info.appendChild(t_name);
+                t_info.appendChild(t_status);
+                t_info.appendChild(t_info);
+                t_info.className = "temple_info_section";
+            } else if (temples[i].name.includes('Japan')){
+                t_name = 'Name: ' + temples[i].name;
+                t_status = 'Current Status: ' + temples[i].status;
+                t_number = 'Phone Number: ' + temples[i].phone_number;
+                t_info.appendChild(t_name);
+                t_info.appendChild(t_status);
+                t_info.appendChild(t_info);
+                t_info.className = "temple_info_section";
+            } else{
+                t_name = 'Name: ' + temples[i].name;
+                t_status = 'Current Status: ' + temples[i].status;
+                t_number = 'Phone Number: ' + temples[i].phone_number;
+                t_info.appendChild(t_name);
+                t_info.appendChild(t_status);
+                t_info.appendChild(t_info);
+                t_info.className = "temple_info_section";
+            } */
+        }
     });

@@ -49,7 +49,12 @@
                 <div class="bannerSec">
                     <img class="bannerPic" src="images/taiwan_taipei_temple.jpg" alt="Banner Pic">
                 </div>
-                <p class="prompt">*Hover the temple below:</p>
+                <div class="temple_summary_info_container">
+                    <div class="temple_summary_info">
+                        Temple Summary Info
+                    </div>
+                </div>
+                <p class="prompt">*Hover the temples below:</p>
             </section>
             <section class="temples">
                 <div class="temple1">
@@ -77,7 +82,51 @@
                         <a class="temple5Name" href="https://www.churchofjesuschrist.org/temples/details/guayaquil-ecuador-temple?lang=eng">Ecuador Guayaquil Temple</a>
                     </div>
                 </div>
+                <div class="instructions">
+                    <div>
+                        Covered Temple Locations
+                    </div>
+                </div>
             </section>
+            <form id="reservation_form" method="GET" action="#">
+                <fieldset>
+                    <legend>
+                        Hotel Reservation
+                    </legend>
+                    <label>
+                        Check-in Date:
+                        <input type="date" name="check_in_date">
+                    </label>
+                    <label>
+                        Check-out Date:
+                        <input type="date" name="check_out_date">
+                    </label>
+                    <label>
+                        Full name:
+                        <input type="text" name="name" pattern="[A-Z a-z]+" minlength="5" required="">
+                    </label>
+                    <label>
+                        Phone Number:
+                        <input type="tel" name="phone">
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" name="email" placeholder="email@email.com">
+                    </label>
+                    <label>
+                        Location:
+                        <select id="location">
+                            <option selected="" disabled="">Select Location</option>
+                            <option value = "Taipei">Taipei</option>
+                            <option value = "Fort Lauderdale">Fort Lauderdale</option>
+                            <option value = "Orlando">Orlando</option>
+                            <option value = "Tokyo">Tokyo</option>
+                            <option value = "Guayaquil">Guayaquil</option>
+                        </select>
+                    </label>
+                    <input class="button" form="reservation_form" type="submit" value="Submit">
+                </fieldset>
+            </form>
         </div>
     </main>
     <footer>
