@@ -8,11 +8,11 @@ window.addEventListener('load',(event)=>{
 
     const infobutton = document.querySelector('.company_info_click');
     const info_detail = document.querySelector('.detail_section');
-    infobutton.addEventListener('click', () => {info_detail.classList.toggle('expand')},false);
+    infobutton.addEventListener('click', (event) => {event.preventDefault(); info_detail.classList.toggle('expand')}, false);
 
     const legalbutton = document.querySelector('.legal_info_click');
     const legal_detail = document.querySelector('.legal_container');
-    legalbutton.addEventListener('click', () => {legal_detail.classList.toggle('open')}, false);
+    legalbutton.addEventListener('click', (event) => {event.preventDefault(); legal_detail.classList.toggle('open')}, false);
 
     const cry = document.querySelector("#copyrightyear");
     cry.textContent = new Date().getFullYear();
@@ -87,46 +87,46 @@ fetch(requestURL)
             let t_number = document.createElement('p');
             let t_info = document.createElement('section');
             if(temples[i].name.includes('Taiwan')){
-                t_name = 'Name: ' + temples[i].name;
-                t_status = 'Current Status: ' + temples[i].status;
-                t_number = 'Phone Number: ' + temples[i].phone_number;
+                t_name.textContent = 'Name: ' + temples[i].name;
+                t_status.textContent = 'Current Status: ' + temples[i].status;
+                t_number.textContent = 'Phone Number: ' + temples[i].phone_number;
                 console.log(t_name);
                 t_info.appendChild(t_name);
                 t_info.appendChild(t_status);
                 t_info.appendChild(t_number);
                 t_info.className = "temple_info_section";
-            } /* else if (temples[i].name.includes('Fort')){
-                t_name = 'Name: ' + temples[i].name;
-                t_status = 'Current Status: ' + temples[i].status;
-                t_number = 'Phone Number: ' + temples[i].phone_number;
+            } else if (temples[i].name.includes('Fort')){
+                t_name.textContent = 'Name: ' + temples[i].name;
+                t_status.textContent = 'Current Status: ' + temples[i].status;
+                t_number.textContent = 'Phone Number: ' + temples[i].phone_number;
                 t_info.appendChild(t_name);
                 t_info.appendChild(t_status);
-                t_info.appendChild(t_info);
+                t_info.appendChild(t_number);
                 t_info.className = "temple_info_section";
             } else if(temples[i].name.includes('Orlando')){
-                t_name = 'Name: ' + temples[i].name;
-                t_status = 'Current Status: ' + temples[i].status;
-                t_number = 'Phone Number: ' + temples[i].phone_number;
+                t_name.textContent = 'Name: ' + temples[i].name;
+                t_status.textContent = 'Current Status: ' + temples[i].status;
+                t_number.textContent = 'Phone Number: ' + temples[i].phone_number;
                 t_info.appendChild(t_name);
                 t_info.appendChild(t_status);
-                t_info.appendChild(t_info);
+                t_info.appendChild(t_number);
                 t_info.className = "temple_info_section";
             } else if (temples[i].name.includes('Japan')){
-                t_name = 'Name: ' + temples[i].name;
-                t_status = 'Current Status: ' + temples[i].status;
-                t_number = 'Phone Number: ' + temples[i].phone_number;
+                t_name.textContent = 'Name: ' + temples[i].name;
+                t_status.textContent = 'Current Status: ' + temples[i].status;
+                t_number.textContent = 'Phone Number: ' + temples[i].phone_number;
                 t_info.appendChild(t_name);
                 t_info.appendChild(t_status);
-                t_info.appendChild(t_info);
+                t_info.appendChild(t_number);
                 t_info.className = "temple_info_section";
             } else{
-                t_name = 'Name: ' + temples[i].name;
-                t_status = 'Current Status: ' + temples[i].status;
-                t_number = 'Phone Number: ' + temples[i].phone_number;
+                t_name.textContent = 'Name: ' + temples[i].name;
+                t_status.textContent = 'Current Status: ' + temples[i].status;
+                t_number.textContent = 'Phone Number: ' + temples[i].phone_number;
                 t_info.appendChild(t_name);
                 t_info.appendChild(t_status);
-                t_info.appendChild(t_info);
+                t_info.appendChild(t_number);
                 t_info.className = "temple_info_section";
-            } */
+            } 
         }
     });

@@ -3,35 +3,41 @@
         {
             "name": "Taiwan Taipei Temple",
             "status": "Phase 3",
+            "status_description": "TEMPLE OPEN FOR ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
             "address": "256 Ai Kuo East Road, Taipei 10642 Taiwan",
             "phone_number": "(886)2-2192-4930",
             "important_milestone": {
                 "Announcement": "31 March 1982",
                 "Groundbreaking": "27 August 1982",
                 "Dedication": "17 November 1984"
-            }
+            },
+            "history":"The Taipei Taiwan Temple is the 31st operating temple of The Church of Jesus Christ of Latter-day Saints (LDS Church), and is located in Taipei City, Taiwan. Missionaries from the LDS Church first came to Taiwan in 1956. The Taipei Taiwan Temple was announced in 1981 and church leaders decided to build on the site of the mission home in the center of Taipei. On November 17, 1984, Gordon B. Hinckley dedicated the Taipei Taiwan Temple. The temple is built on one-half of an acre and has over 16,000 square feet (1,500 m2) with an exterior of white ceramic tile. There are four ordinance rooms and three sealing rooms. In 2020, the Taipei Taiwan Temple was closed in response to the coronavirus pandemic. - Wikipedia"
         },
         {
             "name": "Florida Fortlauderdale Temple",
             "status": "Phase 2",
+            "status_description": "TEMPLE OPEN FOR LIVING ORDINANCES ONLY",
             "address": "3901 SW 154th Ave Davie FL 33331 United States",
             "phone_number": "954-382-8390",
             "important_milestone": {
                 "Announcement": "3 October 2009",
                 "Groundbreaking": "18 June 2011",
                 "Dedication": "4 May 2014"
-            }
+            },
+            "history":"The announcement that a temple would be built in south Florida was made by church president Thomas S. Monson on October 3, 2009, during the church's semi-annual general conference. The temple was announced concurrently with the Brigham City Utah, Concepción Chile, Fortaleza Brazil and Sapporo Japan temples. It is the second temple constructed in Florida and the first in the heavily populated southern part of the state. The state's other temple, in Orlando, was completed in 1994. Subsequent to the announcement, a local church official indicated that the temple would likely be constructed somewhere in western Broward County rather than within the city of Fort Lauderdale itself. No specific location was disclosed. - Wikipedia"
         },
         {
             "name": "Florida Orlando Temple",
             "status": "Phase 2",
+            "status_description": "TEMPLE OPEN FOR LIVING ORDINANCES ONLY",
             "address": "9000 Windy Ridge Rd Windermere FL 34786-8347 United States",
             "phone_number": "407-876-0022",
             "important_milestone": {
                 "Announcement": "6 April 1991",
                 "Groundbreaking": "20 June 1992",
                 "Dedication": "9 October 1994"
-            }
+            },
+            "history":"The LDS temple in Orlando, Florida was announced on April 6, 1991 with a groundbreaking on June 20, 1992. The temple was dedicated on October 9, 1994 by LDS Church president Howard W. Hunter. The temple was built on a 13-acre (53,000 m2) plot, has 4 ordinance rooms and 5 sealing rooms, and has a total floor area of 70,000 square feet (6,500 m2). Orlando is one of two temples dedicated by Hunter, the other is the Bountiful Utah Temple. In 2015 a second temple was dedicated in Florida, the Fort Lauderdale Florida Temple was built in Davie, Florida and serves an estimated 25,000 church members in South Florida. In 2020, the Orlando Florida Temple was closed in response to the coronavirus pandemic."
         },
         {
             "name": "Japan Tokyo Temple",
@@ -42,18 +48,21 @@
                 "Announcement": "9 August 1975",
                 "Groundbreaking": "10 April 1978",
                 "Dedication": "27 October 1980"
-            }
+            },
+            "history":"The intention to construct a temple in Tokyo was announced by the LDS Church on August 9, 1975. The temple was built on less than half an acre, on the site of the former mission home in downtown Tokyo. The mission home had to be demolished for the temple construction to proceed. The temple is very compact, with a parking garage in the basement and an apartment on one of the upper floors for the temple president. It has two ordinance rooms, five sealing rooms, and a total floor area of 52,590 square feet (4,886 m2). The exterior of the temple is reinforced concrete covered with 289 pre-made panels of stone, which look like light gray granite. "
         },
         {
             "name": "Ecuador Guayaquil Temple",
             "status": "Phase 2",
+            "status_description": "TEMPLE OPEN FOR LIVING ORDINANCES ONLY",
             "address": "6ta y Av. Rodrigo Chavez Principado de las Lomas Templo de Guayaquil, Urdesa Norte, — Guayaquil, Ecuador",
             "phone_number": "(593)4-371-8100",
             "important_milestone": {
                 "Announcement": "31 March 1982",
                 "Groundbreaking": "10 August 1996",
                 "Dedication": "1 August 1999"
-            }
+            },
+            "history":"In 1982, Spencer W. Kimball, then president of the LDS Church, announced that there would be an LDS temple built in Ecuador. It took fourteen years to secure the necessary government authorizations and the temple was not completed and dedicated until 1999. The temple was built with Brazilian granite at a cost of US$14,456,000. It is topped by a statue of Moroni. Before the temple in Ecuador was finished, church members in Ecuador would travel three days by bus to attend the temple in Lima, Peru. Before the LDS temple was dedicated, an open house was free to all in the community, including government officials. Over one hundred thousand members and non-members participated in the open house."
         }
     ]
 
