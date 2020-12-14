@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Temple Inn & Suites Site</title>
+    <meta charset="utf-8">
+    <meta name='description' content="TIS Home">
+    <!-- <script src='js/script.js'></script>-->
+    <!-- <script src='js/template.js'></script> -->
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+</head>
+<body>
+    <header>
+        <section class="top-top-top-top-items">
+            <div class="top-top-top-items">
+                <section class="top-top-items">
+                    <div class="topItems">
+                        <div id="logo">
+                            <a href="homepage.html"><img class="logoImg" src='images/logo.png' alt='Weather Logo'></a>
+                        </div>
+                        <nav>
+                            <ul class="navigation">
+                                <li><a class="menu" href="#">⛫ Menu</a></li>
+                                <li><a href="homepage.html">Home</a></li>
+                                <li><a href="temple.html">Temple</a></li>
+                                <li class="n_reservation active"><a href="reservation.html">Reservation</a></li>
+                                <li class="n_services"><a href="services.html">Services</a></li>
+                                <li class="n_contact"><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>    
+                </section>
+            </div>
+        </section>
+        <div class="SiteName">
+            <h1 class="big_header">
+                Temple Inn & Suites
+            </h1>
+            <p class= "motto">"Fulfill All Your Temple Needs"</p>
+        </div>
+    </header>
+    <main>
+        <div class="sub-main">
+            <h2 class="title">
+                Reservation Page
+            </h2>
+        </div>
+        <form id="reservation" method="GET" action="#">
+            <fieldset class="contact_info_field">
+                <legend>
+                    Contact Infomation
+                </legend>
+                <label>
+                    Full Name:
+                    <input type= "text" name ="name" pattern="[A-Z a-z]+" minlength="5" required="">
+                </label>
+                <div>
+                    <label>
+                        Email:
+                        <input type= "email" name="email" placeholder="email@email.com">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Phone Number:
+                        <input type="tel" name="phone" required="">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Home State:
+                        <input type= "text" name ="state" pattern="[A-Z a-z]+" minlength="2">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Country
+                        <input type= "text" name ="country" pattern="[A-Z a-z]+" minlength="2" required="">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Zip Code:
+                        <input type="number" name="zip" required="">
+                    </label>
+                </div>
+            </fieldset>
+            <div class="picSection">
+                <img class="midimg" src="images/form.jpg" alt="form_pic">
+            </div>
+            <fieldset class="room_info_field">
+                <legend>
+                    Room Information
+                </legend>
+                <label>
+                    Location:
+                    <input id="type" list="location" name="type">
+                    <datalist id="location">
+                        <option value="Taipei">Taipei</option>
+                        <option value="Fortlauderdale">Fortlauderdale</option>
+                        <option value="Orlando">Orlando</option>
+                        <option value="Tokyo">Tokyo</option>
+                        <option value="Guayaquil">Guayaquil</option>
+                    </datalist>
+                </label>
+                <div>
+                    <label>
+                        Check-in Date
+                        <input type="Date" name="checkin_date">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Check-out Date
+                        <input type="Date" name="checkout_date">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Room Type:
+                        <input id="type" list="room-type" name="type">
+                        <datalist id="room-type">
+                            <option value="Gold">Gold</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Bronze">Bronze</option>
+                            <option value="Premium">Premium</option>
+                            <option value="Basic">Basic</option>
+                        </datalist>
+                    </label>
+                </div>
+                <p id="comment">Special Accommodations/Comments:</p>
+                <label>
+                    <textarea id="comments" name="comments" rows="10" cols="20"></textarea>
+                </label>
+                <input class="button" form="reservation" type="submit" value="Submit">
+            </fieldset>
+            <!-- <input class="button" form="reservation" type="submit" value="Submit"> -->
+        </form>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="top-infoSection">
+                <div class="infoSection">
+                    <div class="contact_info">
+                        <a class="company_info_click" href="#">
+                            <div class="company_info">
+                                <h4 class="info_header">Company Contact Info</h4>    
+                                <img class="arrow" src="images/arrow.png" alt="arrow pic">                        
+                            </div>
+                        </a>
+                        <div class="detail_section">
+                            <p class="company_info_detail">4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+                            <p class="company_info_detail">temple_inn_suites@gmail.com</p>
+                            <p class="company_info_detail">208-496-1411</p>
+                            <p class="company_info_detail">8am EST - 8pm EST</p>
+                        </div>
+                        <div class="legal_container">
+                            <a class="legal_info_click" href="#">
+                                <div class="legal">
+                                    <h4>Legal Right</h4>
+                                    <img class="arrow legal_arrow" src="images/arrow.png" alt="arrow pic">
+                                </div>
+                            </a>
+                            <p class="legal_detail">&copy; <span id='copyrightyear'></span>|  Daniel Chih | BYU-Idaho | All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="social_media">
+                        <h4>Follow Us</h4>
+                        <div class="icon_section">
+                            <a href="#"><img class="SS" src="images/fb.png" alt="FB"></a>
+                            <a href="#"><img class="SS" src="images/insta.png" alt="IG"></a>
+                            <a href="#"><img class="SS" src="images/youtube.png" alt="YT"></a>
+                            <a href="#"><img class="SS" src="images/tuitter.png" alt="TT"></a>
+                        </div>
+                        <p class="reference">Icons downloaded from Freepik</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script 
+        src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Ubuntu", "Inconsolata"
+                ]
+            }
+        });
+      </script>
+</body>
+</html>
