@@ -1,6 +1,6 @@
 window.addEventListener('load',(event)=>{
 
-const requestURL = '../js/temple_data.json';
+const requestURL = 'https://danielchih1021.github.io/Final_Site_Project/js/temple_data.json';
 
 fetch(requestURL)
     .then(function(response) {
