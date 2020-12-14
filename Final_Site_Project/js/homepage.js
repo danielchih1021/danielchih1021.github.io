@@ -128,5 +128,15 @@ fetch(requestURL)
                 t_info.appendChild(t_number);
                 t_info.className = "temple_info_section";
             } 
+            var summary_information;
+            summary_information.textContent = t_info.textContent;
         }
     });
+
+    function summaryswitch1 () {
+        const summary = document.querySelector('.temple_summary_info');
+        summary.appendChild(summary_information);
+    }
+
+    const temple1Div = document.querySelector('.temple1');
+    temple1Div.addEventListener('mouseover', summaryswitch1,false);
