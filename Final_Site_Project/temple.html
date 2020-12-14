@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name='description' content="TIS Home">
     <!-- <script src='js/script.js'></script>-->
-    <script src='js/homepage.js'></script>
-    <link rel="stylesheet" href="css/homepage.css">
+    <script src='js/temple.js'></script>
+    <link rel="stylesheet" href="css/temple.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 </head>
@@ -22,11 +22,11 @@
                         <nav>
                             <ul class="navigation">
                                 <li><a class="menu" href="#">⛫ Menu</a></li>
-                                <li><a class="active" href="homepage.html">Home</a></li>
-                                <li><a href="#">Temple</a></li>
-                                <li class="n_reservation"><a href="#">Reservation</a></li>
-                                <li class="n_services"><a href="">Services</a></li>
-                                <li class="n_contact"><a href="">Contact</a></li>
+                                <li><a href="homepage.html">Home</a></li>
+                                <li><a class="active" href="temple.html">Temple</a></li>
+                                <li class="n_reservation"><a href="reservation.html">Reservation</a></li>
+                                <li class="n_services"><a href="services.html">Services</a></li>
+                                <li class="n_contact"><a href="contact.html">Contact</a></li>
                             </ul>
                         </nav>
                     </div>    
@@ -43,91 +43,194 @@
     <main>
         <div class="sub-main">
             <h2 class="title">
-                Home Page
+                Temple
             </h2>
-            <section class="container">
-                <div class="bannerSec">
-                    <img class="bannerPic" src="images/taiwan_taipei_temple.jpg" alt="Banner Pic">
-                </div>
-                <div class="temple_summary_info_container">
-                    <div class="temple_summary_info">
-                        Temple Summary Info
-                    </div>
-                </div>
-                <p class="prompt">*Hover the temples below:</p>
-            </section>
-            <section class="temples">
-                <div class="temple1">
-                    <div>
-                        <a class="temple1Name" href="https://www.churchofjesuschrist.org/temples/details/taipei-taiwan-temple?lang=eng">Taiwan Taipei Temple</a>
-                    </div>
-                </div>
-                <div class="temple2">
-                    <div>
-                        <a class="temple2Name" href="https://www.churchofjesuschrist.org/temples/details/fort-lauderdale-florida-temple?lang=eng">Fortlauderdale Florida Temple</a>
-                    </div>
-                </div>
-                <div class="temple3">
-                    <div>
-                        <a class="temple3Name" href="https://www.churchofjesuschrist.org/temples/details/orlando-florida-temple?lang=eng">Orlando Florida Temple</a>
-                    </div>
-                </div>
-                <div class="temple4">
-                    <div>
-                        <a class="temple4Name" href="https://www.churchofjesuschrist.org/temples/details/tokyo-japan-temple?lang=eng">Japan Tokyo Temple</a>
-                    </div>
-                </div>
-                <div class="temple5">
-                    <div>
-                        <a class="temple5Name" href="https://www.churchofjesuschrist.org/temples/details/guayaquil-ecuador-temple?lang=eng">Ecuador Guayaquil Temple</a>
-                    </div>
-                </div>
-                <div class="instructions">
-                    <div>
-                        Covered Temple Locations
-                    </div>
-                </div>
-            </section>
-            <form id="reservation_form" method="GET" action="#">
-                <fieldset>
-                    <legend>
-                        Hotel Reservation
-                    </legend>
-                    <label>
-                        Check-in Date:
-                        <input type="date" name="check_in_date">
-                    </label>
-                    <label>
-                        Check-out Date:
-                        <input type="date" name="check_out_date">
-                    </label>
-                    <label>
-                        Full name:
-                        <input type="text" name="name" pattern="[A-Z a-z]+" minlength="5" required="">
-                    </label>
-                    <label>
-                        Phone Number:
-                        <input type="tel" name="phone">
-                    </label>
-                    <label>
-                        Email:
-                        <input type="email" name="email" placeholder="email@email.com">
-                    </label>
-                    <label>
-                        Desired Location:
-                        <select id="location">
-                            <option selected="" disabled="">Select Location</option>
-                            <option value = "Taipei">Taipei</option>
-                            <option value = "Fort Lauderdale">Fort Lauderdale</option>
-                            <option value = "Orlando">Orlando</option>
-                            <option value = "Tokyo">Tokyo</option>
-                            <option value = "Guayaquil">Guayaquil</option>
-                        </select>
-                    </label>
-                    <input class="button" form="reservation_form" type="submit" value="Submit">
-                </fieldset>
-            </form>
         </div>
+        <section class="temple_container">
+            <div class="templeTP">
+                <div class="temple_banner">
+                    <img class="banner_picure" src="images/temple1_template.jpg" alt="Banner">
+                </div>
+                <div class="temple_basic_info">
+                    <div class="address">
+                    </div>
+                    <div class="phone_number">
+                    </div>
+                    <div class="status">
+                    </div>
+                    <div class="status_desc">
+                    </div>
+                </div>
+                <div class="temple_services">
+                    <div class="clothing">
+                    </div>
+                    <div class="cafe">
+                    </div>
+                    <div class="housing">
+                    </div>
+                    <div class="DC">
+                    </div>
+                </div>
+                <div class="milestones">
+                    <div class="announcement">
+                    </div>
+                    <div class="ground_breaking">
+                    </div>
+                    <div class="dedication">
+                    </div>
+                </div>
+                <div class="history">
+                </div>
+            </div>
+        </section>
+        <section class="temple_container">
+            <div class="templeFL">
+                <div class="temple_banner">
+                    <img class="banner_picure" src="images/temple2_template.jpg" alt="Banner">
+                </div>
+                <div class="temple_basic_info">
+                    <div class="address">
+                    </div>
+                    <div class="phone_number">
+                    </div>
+                    <div class="status">
+                    </div>
+                    <div class="status_desc">
+                    </div>
+                </div>
+                <div class="temple_services">
+                    <div class="clothing">
+                    </div>
+                    <div class="cafe">
+                    </div>
+                    <div class="housing">
+                    </div>
+                    <div class="DC">
+                    </div>
+                </div>
+                <div class="milestones">
+                    <div class="announcement">
+                    </div>
+                    <div class="ground_breaking">
+                    </div>
+                    <div class="dedication">
+                    </div>
+                </div>
+                <div class="history">
+                </div>
+            </div>
+        </section>
+        <section class="temple_container">
+            <div class="templeOL">
+                <div class="temple_banner">
+                    <img class="banner_picure" src="images/temple3_template.jpg" alt="Banner">
+                </div>
+                <div class="temple_basic_info">
+                    <div class="address">
+                    </div>
+                    <div class="phone_number">
+                    </div>
+                    <div class="status">
+                    </div>
+                    <div class="status_desc">
+                    </div>
+                </div>
+                <div class="temple_services">
+                    <div class="clothing">
+                    </div>
+                    <div class="cafe">
+                    </div>
+                    <div class="housing">
+                    </div>
+                    <div class="DC">
+                    </div>
+                </div>
+                <div class="milestones">
+                    <div class="announcement">
+                    </div>
+                    <div class="ground_breaking">
+                    </div>
+                    <div class="dedication">
+                    </div>
+                </div>
+                <div class="history">
+                </div>
+            </div>
+        </section>
+        <section class="temple_container">
+            <div class="templeTY">
+                <div class="temple_banner">
+                    <img class="banner_picure" src="images/temple4_template.jpg" alt="Banner">
+                </div>
+                <div class="temple_basic_info">
+                    <div class="address">
+                    </div>
+                    <div class="phone_number">
+                    </div>
+                    <div class="status">
+                    </div>
+                    <div class="status_desc">
+                    </div>
+                </div>
+                <div class="temple_services">
+                    <div class="clothing">
+                    </div>
+                    <div class="cafe">
+                    </div>
+                    <div class="housing">
+                    </div>
+                    <div class="DC">
+                    </div>
+                </div>
+                <div class="milestones">
+                    <div class="announcement">
+                    </div>
+                    <div class="ground_breaking">
+                    </div>
+                    <div class="dedication">
+                    </div>
+                </div>
+                <div class="history">
+                </div>
+            </div>
+        </section>
+        <section class="temple_container">
+            <div class="templeEG">
+                <div class="temple_banner">
+                    <img class="banner_picure" src="images/temple5_template.jpg" alt="Banner">
+                </div>
+                <div class="temple_basic_info">
+                    <div class="address">
+                    </div>
+                    <div class="phone_number">
+                    </div>
+                    <div class="status">
+                    </div>
+                    <div class="status_desc">
+                    </div>
+                </div>
+                <div class="temple_services">
+                    <div class="clothing">
+                    </div>
+                    <div class="cafe">
+                    </div>
+                    <div class="housing">
+                    </div>
+                    <div class="DC">
+                    </div>
+                </div>
+                <div class="milestones">
+                    <div class="announcement">
+                    </div>
+                    <div class="ground_breaking">
+                    </div>
+                    <div class="dedication">
+                    </div>
+                </div>
+                <div class="history">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer">

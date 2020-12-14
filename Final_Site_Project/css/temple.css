@@ -1,0 +1,301 @@
+/* Small Phone View */
+*{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+p{
+	font-family: 'Inconsolata', sans-serif;
+}
+
+.logoImg{
+	width:100%;
+	margin-top: 8px;
+}
+
+#logo{
+	width:80px;
+	height:80px;
+}
+
+.topItems{
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+	width: 150px;
+	height:120px;
+	border: 1px solid black;
+	-webkit-box-shadow: inset 0 0 10px #fb48b3;
+	box-shadow:         inset 0 0 10px #fb48b3;
+}
+/* .topItems:hover{
+	box-shadow: rgb(213, 210, 208) 5px 5px 15px, rgb(255, 255, 255) -5px -5px 15px;
+	background-color: #fb48b3;
+}  */
+
+.top-top-items{
+	width: 150px;
+	-webkit-box-shadow: 0 0 10px #75d8f3;
+  	box-shadow: 0 0 10px #75d8f3;
+}
+
+.top-top-top-items{
+	width:100%;
+	border: 1px solid black;
+	-webkit-box-shadow: inset 0 0 10px #fb48b3;
+	box-shadow: inset 0 0 10px #fb48b3;
+}
+
+.top-top-top-top-items{
+	width:100%;
+	border: 1px solid black;
+	-webkit-box-shadow: 0 0 10px #75d8f3;
+  	box-shadow: 0 0 10px #75d8f3;
+}
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	/* background-color: lightskyblue; */
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+	margin-top: 15px;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.responsive li {
+	display: block;
+	margin-right:0;
+}
+.responsive{
+	display:grid;
+	grid-template-columns: repeat(4,1fr);
+}
+
+.responsive .n_services{
+	grid-row: 2/3;
+	grid-column:2/3;
+}
+
+.responsive .n_reservation{
+	grid-row: 2/3;
+	grid-column:3/4;
+}
+
+.big_header{
+	text-shadow: 2px 2px 5px #75d8f3;
+	margin-bottom: -10px;
+}
+
+.motto{
+	text-shadow: 2px 2px 5px #fb48b3;
+}
+
+.infoSection{
+	-webkit-box-shadow: inset 0 0 10px #fb48b3;
+	box-shadow: inset 0 0 10px #fb48b3;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.top-infoSection{
+	-webkit-box-shadow: 0 0 10px #75d8f3;
+	box-shadow: 0 0 10px #75d8f3;
+	border: 1px solid black;
+	margin-top: 10px;
+}
+
+.SS{
+	width:20px;
+	height:20px;
+	border: 1px solid black;
+	padding: 2px;
+}
+
+.icon_section{
+	margin-top:-10px;
+}
+
+.arrow{
+	width:40px;
+	height:40px;
+	margin-top: 20px;
+	margin-left:-10px;
+}
+
+.company_info{
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+	width:250px;
+}
+
+.company_info_detail{
+	margin-top:-5px;
+}
+
+
+.reference{
+	font-size:12px;
+}
+
+.legal{
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+	width:250px;
+}
+
+.legal_arrow{
+	margin-top: 10px;
+} 
+
+.title{
+	text-align: center;
+}
+
+.SiteName{
+	text-align: center;
+}
+
+.contact_info .company_info_detail{
+	display:none;
+}
+.legal_container .legal_detail{
+	display:none;
+}
+
+.expand .company_info_detail{
+	display:block;
+}
+
+.open .legal_detail{
+	display:block;
+	margin-top:-5px;
+}
+
+.active{
+	background-color:antiquewhite;
+}
+
+.footer{
+	width:400px;
+	margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.temple_container{
+	width:400px;
+}
+
+.templeTP{
+	width:100%;
+}
+
+.templeFL{
+	width:100%;
+}
+
+.templeOL{
+	width:100%;
+}
+
+.templeTY{
+	width:100%;
+}
+
+.templeEG{
+	width:100%;
+}
+
+.temple_banner{
+	width:400px;
+	height:400px;
+}
+
+.banner_picture{
+	width:400px;
+	height:400px;
+}
+
+/* Medium Phone View */
+@media only screen and (min-width: 700px) {
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+
+	.navigation a {
+		text-align: center;
+		text-decoration: none;
+		color:black;
+		text-shadow: 2px 2px 5px #75d8f3;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.topItems{
+		width: 100%;
+		grid-template-columns: 60px 1fr;
+	}
+
+	.navigation{
+		margin-left: -30px;
+	}
+
+	.top-top-items{
+		width:100%;
+	}
+
+	.top-infoSection{
+		width:80%;
+		margin: 0 auto;
+	}
+
+	.footer{
+		width:650px;
+		margin: 0 auto;
+	}
+	
+	.top-infoSection{
+		width:100%;
+	}
+
+	.footer{
+		width:650px;
+	}
+}
+/* Large Phone View */
+@media only screen and (min-width: 1000px) {
+	.footer{
+		width:950px;
+	}
+}
