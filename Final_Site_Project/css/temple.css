@@ -208,36 +208,31 @@ a:visited{
 
 .temple_container{
 	width:400px;
+	margin:0 auto;
 }
 
-.templeTP{
-	width:100%;
-}
-
-.templeFL{
-	width:100%;
-}
-
-.templeOL{
-	width:100%;
-}
-
-.templeTY{
-	width:100%;
-}
-
-.templeEG{
-	width:100%;
-}
-
-.temple_banner{
+.bannerPic{
 	width:400px;
-	height:400px;
+	height:300px;
 }
 
-.banner_picture{
-	width:400px;
-	height:400px;
+.iconSection{
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+}
+
+.dropDown{
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+	width:300px;
+	margin-bottom: -30px;
+}
+
+.temple_arrow{
+	width:20px;
+	height:20px;
+	margin-top: 15px;
+	margin-left:-25px;
 }
 
 /* Medium Phone View */
@@ -292,10 +287,18 @@ a:visited{
 	.footer{
 		width:650px;
 	}
+	.bannerPic{
+		width:650px;
+		height:400px;
+	}
 }
 /* Large Phone View */
 @media only screen and (min-width: 1000px) {
 	.footer{
 		width:950px;
+	}
+	.bannerPic{
+		width:950px;
+		height:400px;
 	}
 }
