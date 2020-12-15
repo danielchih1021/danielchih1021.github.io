@@ -353,9 +353,11 @@ a:visited{
         margin-bottom: 20px;
     }
     .reception{
-        background-image: url('../images/wedding_medium.jpg');
+        background-image: url('../images/wedding_large.jpg');
+        height:400px;
     }
     .missionary{
-        background-image: url('../images/missionary_medium.jpg');
+        background-image: url('../images/missionary_large.jpg');
+        height:400px;
     }
 }
