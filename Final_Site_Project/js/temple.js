@@ -330,5 +330,113 @@ fetch(requestURL)
       info.appendChild(ws);
       document.querySelector('.templeEG .weather').appendChild(info);
     });
+
+    const TP1button = document.querySelector('.first_drop_TP');
+    const TPbanner = document.querySelector('.templeTP');
+    TP1button.addEventListener('click', (event) => {event.preventDefault(); TPbanner.classList.toggle('drop1_TP')}, false);
+
+    const TP2button = document.querySelector('.second_drop_TP');
+    const TPservices = document.querySelector('.templeTP');
+    TP2button.addEventListener('click', (event) => {event.preventDefault(); TPservices.classList.toggle('drop2_TP')}, false);
+
+    const TP3button = document.querySelector('.third_drop_TP');
+    const TPmilestones = document.querySelector('.templeTP');
+    TP3button.addEventListener('click', (event) => {event.preventDefault(); TPmilestones.classList.toggle('drop3_TP')}, false);
+
+    const TP4button = document.querySelector('.fourth_drop_TP');
+    const TPhistory = document.querySelector('.templeTP');
+    TP4button.addEventListener('click', (event) => {event.preventDefault(); TPhistory.classList.toggle('drop4_TP')}, false);
+
+    const TP5button = document.querySelector('.fifth_drop_TP');
+    const TPweather = document.querySelector('.templeTP');
+    TP5button.addEventListener('click', (event) => {event.preventDefault(); TPweather.classList.toggle('drop5_TP')}, false);
+
+    /* FL Temple */
+
+    const FL1button = document.querySelector('.first_drop_FL');
+    const FLbanner = document.querySelector('.templeFL');
+    FL1button.addEventListener('click', (event) => {event.preventDefault(); FLbanner.classList.toggle('drop1_FL')}, false);
+
+    const FL2button = document.querySelector('.second_drop_FL');
+    const FLservices = document.querySelector('.templeFL');
+    FL2button.addEventListener('click', (event) => {event.preventDefault(); FLservices.classList.toggle('drop2_FL')}, false);
+
+    const FL3button = document.querySelector('.third_drop_FL');
+    const FLmilestones = document.querySelector('.templeFL');
+    FL3button.addEventListener('click', (event) => {event.preventDefault(); FLmilestones.classList.toggle('drop3_FL')}, false);
+
+    const FL4button = document.querySelector('.fourth_drop_FL');
+    const FLhistory = document.querySelector('.templeFL');
+    FL4button.addEventListener('click', (event) => {event.preventDefault(); FLhistory.classList.toggle('drop4_FL')}, false);
+
+    const FL5button = document.querySelector('.fifth_drop_FL');
+    const FLweather = document.querySelector('.templeFL');
+    FL5button.addEventListener('click', (event) => {event.preventDefault(); FLweather.classList.toggle('drop5_FL')}, false);
+
+    /* OL Temple */
+
+    const OL1button = document.querySelector('.first_drop_OL');
+    const OLbanner = document.querySelector('.templeOL');
+    OL1button.addEventListener('click', (event) => {event.preventDefault(); OLbanner.classList.toggle('drop1_OL')}, false);
+
+    const OL2button = document.querySelector('.second_drop_OL');
+    const OLservices = document.querySelector('.templeOL');
+    OL2button.addEventListener('click', (event) => {event.preventDefault(); OLservices.classList.toggle('drop2_OL')}, false);
+
+    const OL3button = document.querySelector('.third_drop_OL');
+    const OLmilestones = document.querySelector('.templeOL');
+    OL3button.addEventListener('click', (event) => {event.preventDefault(); OLmilestones.classList.toggle('drop3_OL')}, false);
+
+    const OL4button = document.querySelector('.fourth_drop_OL');
+    const OLhistory = document.querySelector('.templeOL');
+    OL4button.addEventListener('click', (event) => {event.preventDefault(); OLhistory.classList.toggle('drop4_OL')}, false);
+
+    const OL5button = document.querySelector('.fifth_drop_OL');
+    const OLweather = document.querySelector('.templeOL');
+    OL5button.addEventListener('click', (event) => {event.preventDefault(); OLweather.classList.toggle('drop5_OL')}, false);
+
+    /* TY Temple */
+
+    const TY1button = document.querySelector('.first_drop_TY');
+    const TYbanner = document.querySelector('.templeTY');
+    TY1button.addEventListener('click', (event) => {event.preventDefault(); TYbanner.classList.toggle('drop1_TY')}, false);
+
+    const TY2button = document.querySelector('.second_drop_TY');
+    const TYservices = document.querySelector('.templeTY');
+    TY2button.addEventListener('click', (event) => {event.preventDefault(); TYservices.classList.toggle('drop2_TY')}, false);
+
+    const TY3button = document.querySelector('.third_drop_TY');
+    const TYmilestones = document.querySelector('.templeTY');
+    TY3button.addEventListener('click', (event) => {event.preventDefault(); TYmilestones.classList.toggle('drop3_TY')}, false);
+
+    const TY4button = document.querySelector('.fourth_drop_TY');
+    const TYhistory = document.querySelector('.templeTY');
+    TY4button.addEventListener('click', (event) => {event.preventDefault(); TYhistory.classList.toggle('drop4_TY')}, false);
+
+    const TY5button = document.querySelector('.fifth_drop_TY');
+    const TYweather = document.querySelector('.templeTY');
+    TY5button.addEventListener('click', (event) => {event.preventDefault(); TYweather.classList.toggle('drop5_TY')}, false);
+
+    /* EG Temple */
+
+    const EG1button = document.querySelector('.first_drop_EG');
+    const EGbanner = document.querySelector('.templeEG');
+    EG1button.addEventListener('click', (event) => {event.preventDefault(); EGbanner.classList.toggle('drop1_EG')}, false);
+
+    const EG2button = document.querySelector('.second_drop_EG');
+    const EGservices = document.querySelector('.templeEG');
+    EG2button.addEventListener('click', (event) => {event.preventDefault(); EGservices.classList.toggle('drop2_EG')}, false);
+
+    const EG3button = document.querySelector('.third_drop_EG');
+    const EGmilestones = document.querySelector('.templeEG');
+    EG3button.addEventListener('click', (event) => {event.preventDefault(); EGmilestones.classList.toggle('drop3_EG')}, false);
+
+    const EG4button = document.querySelector('.fourth_drop_EG');
+    const EGhistory = document.querySelector('.templeEG');
+    EG4button.addEventListener('click', (event) => {event.preventDefault(); EGhistory.classList.toggle('drop4_EG')}, false);
+
+    const EG5button = document.querySelector('.fifth_drop_EG');
+    const EGweather = document.querySelector('.templeEG');
+    EG5button.addEventListener('click', (event) => {event.preventDefault(); EGweather.classList.toggle('drop5_EG')}, false);
 });
 

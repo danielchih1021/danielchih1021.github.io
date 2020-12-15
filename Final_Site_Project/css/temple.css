@@ -224,8 +224,12 @@ a:visited{
 .dropDown{
 	display:grid;
 	grid-template-columns: repeat(2,1fr);
-	width:300px;
-	margin-bottom: -30px;
+	width:360px;
+	border: 1px solid white;
+	-webkit-box-shadow: 0 0 10px #fb48b3;
+	box-shadow: 0 0 10px #fb48b3;
+	padding-left: 10px;  
+	margin-bottom: 20px;
 }
 
 .temple_arrow{
@@ -235,10 +239,225 @@ a:visited{
 	margin-left:-25px;
 }
 
-.first_drop{
-	margin-bottom: -10px;
+.templeTP{
+	padding: 10px;
+	border: 1px solid black;
+	margin: 15px auto;
+	border-radius: 25px;
+	-webkit-box-shadow: 0 0 10px #75d8f3;
+  	box-shadow: 0 0 10px #75d8f3;
 }
 
+.templeFL{
+	padding: 10px;
+	border: 1px solid black;
+	margin: 15px auto;
+	border-radius: 25px;
+	-webkit-box-shadow: 0 0 10px #75d8f3;
+  	box-shadow: 0 0 10px #75d8f3;
+}
+
+.templeOL{
+	padding: 10px;
+	border: 1px solid black;
+	margin: 15px auto;
+	border-radius: 25px;
+	-webkit-box-shadow: 0 0 10px #75d8f3;
+  	box-shadow: 0 0 10px #75d8f3;
+}
+
+.templeTY{
+	padding: 10px;
+	border: 1px solid black;
+	margin: 15px auto;
+	border-radius: 25px;
+	-webkit-box-shadow: 0 0 10px #75d8f3;
+  	box-shadow: 0 0 10px #75d8f3;
+}
+
+.templeEG{
+	padding: 10px;
+	border: 1px solid black;
+	margin: 15px auto;
+	border-radius: 25px;
+	-webkit-box-shadow: 0 0 10px #75d8f3;
+  	box-shadow: 0 0 10px #75d8f3;
+}
+
+.temple_banner{
+	display:none;
+}
+
+.drop1_TP .temple_banner{
+	display:block;
+	margin:0 auto;
+	width:400px;
+}
+
+.drop1_FL .temple_banner{
+	display:block;
+}
+
+.drop1_OL .temple_banner{
+	display:block;
+}
+
+.drop1_TY .temple_banner{
+	display:block;
+}
+
+.drop1_EG .temple_banner{
+	display:block;
+}
+
+.temple_basic_info{
+	display:none;
+}
+
+.drop1_TP .temple_basic_info{
+	display:block;
+}
+
+.drop1_FL .temple_basic_info{
+	display:block;
+}
+
+.drop1_OL .temple_basic_info{
+	display:block;
+}
+
+.drop1_TY .temple_basic_info{
+	display:block;
+}
+
+.drop1_EG .temple_basic_info{
+	display:block;
+}
+
+.temple_services{
+	display:none;
+}
+
+.drop2_TP .temple_services{
+	display:block;
+}
+
+.drop2_FL .temple_services{
+	display:block;
+}
+
+.drop2_OL .temple_services{
+	display:block;
+}
+
+.drop2_TY .temple_services{
+	display:block;
+}
+
+.drop2_EG .temple_services{
+	display:block;
+}
+
+.milestones{
+	display:none;
+}
+
+.drop3_TP .milestones{
+	display:block;
+}
+
+.drop3_FL .milestones{
+	display:block;
+}
+
+.drop3_OL .milestones{
+	display:block;
+}
+
+.drop3_TY .milestones{
+	display:block;
+}
+
+.drop3_EG .milestones{
+	display:block;
+}
+
+.history{
+	display:none;
+}
+
+.drop4_TP .history{
+	display:block;
+}
+
+.drop4_FL .history{
+	display:block;
+}
+
+.drop4_OL .history{
+	display:block;
+}
+
+.drop4_TY .history{
+	display:block;
+}
+
+.drop4_EG .history{
+	display:block;
+}
+
+.weather{
+	display:none;
+}
+
+.drop5_TP .weather{
+	display:block;
+}
+
+.drop5_TP .weather{
+	display:block;
+}
+.drop5_FL .weather{
+	display:block;
+}
+.drop5_OL .weather{
+	display:block;
+}
+.drop5_TY .weather{
+	display:block;
+}
+.drop5_EG .weather{
+	display:block;
+}
+
+.big_banner{
+	display:none;
+}
+
+.mid_banner{
+	display:none;
+}
+
+.sml_banner{
+	margin:0 auto;
+	width:300px;
+	margin-left:35px;
+}
+
+.icon_img{
+	width: 50px;
+	height: 50px;
+	margin-left: 70px;
+}
+
+.iconSection{
+	width:400px;
+	margin-bottom: 10px;
+}
+
+.icon_name{
+	margin-left:-70px;
+}
 /* Medium Phone View */
 @media only screen and (min-width: 700px) {
 	.navigation {
@@ -292,14 +511,68 @@ a:visited{
 	
 		width:650px;
 	}
-	.bannerPic{
-		width:650px;
-		height:400px;
-	}
 	.temple_container{
 		width:650px;
 		margin:0 auto;
 	}
+
+	.sml_banner{
+		display:none;
+	}
+
+	.mid_banner{
+		display:block;
+		width:550px;
+		height:400px;
+		margin-right:0px;
+		margin-left:-80px;
+	}
+	.dropDown{
+		width:550px;
+		margin:0 auto;
+	}
+
+	.temple_basic_info{
+		width:550px;
+		margin: 0 auto;
+	}
+
+	.temple_services{
+		width:550px;
+		margin: 0 auto;
+	}
+
+	.milestones{
+		width:550px;
+		margin: 0 auto;
+	}
+
+	.history{
+		width:550px;
+		margin: 0 auto;
+	}
+
+	.weather{
+		width:550px;
+		margin: 0 auto;
+	}
+
+	.drop1_FL .mid_banner{
+		margin-left: 40px;
+	}
+
+	.drop1_OL .mid_banner{
+		margin-left: 40px;
+	}
+
+	.drop1_TY .mid_banner{
+		margin-left: 40px;
+	}
+
+	.drop1_EG .mid_banner{
+		margin-left: 40px;
+	}
+
 }
 /* Large Phone View */
 @media only screen and (min-width: 1000px) {
@@ -315,5 +588,47 @@ a:visited{
 		width:950px;
 		margin:0 auto;
 	}
-}
+	.dropDown{
+		width:900px;
+		margin:0 auto;
+	}
+
+	.temple_basic_info{
+		width:900px;
+		margin: 0 auto;
+	}
+
+	.temple_services{
+		width:900px;
+		margin: 0 auto;
+	}
+
+	.milestones{
+		width:900px;
+		margin: 0 auto;
+	}
+
+	.history{
+		width:900px;
+		margin: 0 auto;
+	}
+
+	.weather{
+		width:900px;
+		margin: 0 auto;
+	}
+
+	.mid_banner{
+		display:none;
+	}
+
+	.big_banner{
+		display: block;
+		margin-left:20px;
+		width:900px;
+	}
+
+	.drop1_TP .big_banner{
+		margin-left:-250px;
+	}
 }
